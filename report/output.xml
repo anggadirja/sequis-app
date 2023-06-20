@@ -1,0 +1,534 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.9.6 on darwin)" generated="20230620 19:40:32.675" rpa="false" schemaversion="3">
+<suite id="s1" name="OrderSuite" source="/Users/sehatq/Documents/sequis-app/TestSuite/OrderSuite.robot">
+<kw name="Start Application on Local" library="prod" type="SETUP">
+<kw name="Convert To Boolean" library="BuiltIn">
+<var>${true}</var>
+<arg>true</arg>
+<doc>Converts the given item to Boolean true or false.</doc>
+<msg timestamp="20230620 19:40:32.780" level="INFO">${true} = True</msg>
+<status status="PASS" starttime="20230620 19:40:32.780" endtime="20230620 19:40:32.780"/>
+</kw>
+<kw name="Open Application" library="AppiumLibrary">
+<arg>http://127.0.0.1:4723/wd/hub</arg>
+<arg>platformName=android</arg>
+<arg>platformVersion=12.0</arg>
+<arg>udid=emulator-5554</arg>
+<arg>app=${APKPATH}</arg>
+<arg>appPackage=${APP PACKAGE}</arg>
+<arg>appActivity=${APP ACTIVITY}</arg>
+<arg>newCommandTimeout=2500</arg>
+<arg>noReset=true</arg>
+<arg>autoGrantPermissions=true</arg>
+<arg>enableMultiWindows=${true}</arg>
+<arg>unicodeKeyboard=true</arg>
+<arg>resetKeyboard=true</arg>
+<arg>automationName=uiautomator2</arg>
+<arg>dontStopAppOnReset=true</arg>
+<arg>adbExecTimeout=60000</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/server-args.md
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |</doc>
+<status status="PASS" starttime="20230620 19:40:32.780" endtime="20230620 19:40:38.558"/>
+</kw>
+<status status="PASS" starttime="20230620 19:40:32.780" endtime="20230620 19:40:38.558"/>
+</kw>
+<test id="s1-t1" name="verify user can create order" line="8">
+<kw name="Create order" library="OrderTest">
+<kw name="Given Add product to cart" library="OrderTest">
+<kw name="Given Success login with autofill credentials" library="LoginTest">
+<kw name="Given Access login page" library="LoginTest">
+<kw name="When user open hamburger menu" library="ProductListPage">
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>${buttonMenu}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" starttime="20230620 19:40:38.561" endtime="20230620 19:40:39.195"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${buttonMenu}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20230620 19:40:39.204" level="INFO">Clicking element 'xpath=//*[@content-desc="open menu"]'.</msg>
+<status status="PASS" starttime="20230620 19:40:39.195" endtime="20230620 19:40:39.305"/>
+</kw>
+<status status="PASS" starttime="20230620 19:40:38.561" endtime="20230620 19:40:39.305"/>
+</kw>
+<kw name="And user go to login page" library="ProductListPage">
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>${textLogin}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" starttime="20230620 19:40:39.306" endtime="20230620 19:40:40.894"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${textLogin}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20230620 19:40:40.903" level="INFO">Clicking element 'xpath=//*[@content-desc="menu item log in"]'.</msg>
+<status status="PASS" starttime="20230620 19:40:40.895" endtime="20230620 19:40:40.988"/>
+</kw>
+<status status="PASS" starttime="20230620 19:40:39.305" endtime="20230620 19:40:40.988"/>
+</kw>
+<kw name="Then user is on login page" library="LoginPage">
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>${inputUsernameOnLoginPage}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" starttime="20230620 19:40:40.989" endtime="20230620 19:40:42.432"/>
+</kw>
+<kw name="Element Should Be Visible" library="AppiumLibrary">
+<arg>${inputUsernameOnLoginPage}</arg>
+<doc>Verifies that element identified with locator is visible.</doc>
+<status status="PASS" starttime="20230620 19:40:42.433" endtime="20230620 19:40:42.515"/>
+</kw>
+<kw name="Element Should Be Visible" library="AppiumLibrary">
+<arg>${inputPasswordOnLoginPage}</arg>
+<doc>Verifies that element identified with locator is visible.</doc>
+<status status="PASS" starttime="20230620 19:40:42.515" endtime="20230620 19:40:42.577"/>
+</kw>
+<kw name="Element Should Be Visible" library="AppiumLibrary">
+<arg>${buttonLogin}</arg>
+<doc>Verifies that element identified with locator is visible.</doc>
+<status status="PASS" starttime="20230620 19:40:42.578" endtime="20230620 19:40:42.638"/>
+</kw>
+<status status="PASS" starttime="20230620 19:40:40.988" endtime="20230620 19:40:42.638"/>
+</kw>
+<status status="PASS" starttime="20230620 19:40:38.561" endtime="20230620 19:40:42.638"/>
+</kw>
+<kw name="When user input credentials with autofill" library="LoginPage">
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>${textValidAutofillCredentials}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" starttime="20230620 19:40:42.639" endtime="20230620 19:40:42.837"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${textValidAutofillCredentials}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20230620 19:40:42.845" level="INFO">Clicking element 'xpath=//*[@content-desc="bob@example.com-autofill"]'.</msg>
+<status status="PASS" starttime="20230620 19:40:42.837" endtime="20230620 19:40:42.919"/>
+</kw>
+<status status="PASS" starttime="20230620 19:40:42.638" endtime="20230620 19:40:42.919"/>
+</kw>
+<kw name="And user click button login on login page" library="LoginPage">
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>${buttonLogin}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" starttime="20230620 19:40:42.920" endtime="20230620 19:40:43.962"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${buttonLogin}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20230620 19:40:43.973" level="INFO">Clicking element 'xpath=//*[@content-desc="Login button"]'.</msg>
+<status status="PASS" starttime="20230620 19:40:43.963" endtime="20230620 19:40:44.090"/>
+</kw>
+<status status="PASS" starttime="20230620 19:40:42.920" endtime="20230620 19:40:44.090"/>
+</kw>
+<kw name="Then user success to login" library="LoginPage">
+<kw name="Wait Until Page Does Not Contain" library="AppiumLibrary">
+<arg>${buttonLogin}</arg>
+<doc>Waits until `text` disappears from current page.</doc>
+<status status="PASS" starttime="20230620 19:40:44.091" endtime="20230620 19:40:44.149"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230620 19:40:47.151" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20230620 19:40:44.149" endtime="20230620 19:40:47.151"/>
+</kw>
+<kw name="Page Should Not Contain Element" library="AppiumLibrary">
+<arg>${buttonLogin}</arg>
+<doc>Verifies that current page not contains `locator` element.</doc>
+<msg timestamp="20230620 19:40:47.243" level="INFO">Current page not contains element 'xpath=//*[@content-desc="Login button"]'.</msg>
+<status status="PASS" starttime="20230620 19:40:47.152" endtime="20230620 19:40:47.243"/>
+</kw>
+<status status="PASS" starttime="20230620 19:40:44.091" endtime="20230620 19:40:47.243"/>
+</kw>
+<status status="PASS" starttime="20230620 19:40:38.561" endtime="20230620 19:40:47.243"/>
+</kw>
+<kw name="When user go to product detail page" library="ProductListPage">
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>${imageProduct}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" starttime="20230620 19:40:47.244" endtime="20230620 19:40:47.293"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${imageProduct}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20230620 19:40:47.302" level="INFO">Clicking element 'xpath=(//*[@content-desc='products screen']//*[@content-desc='store item'])[1]'.</msg>
+<status status="PASS" starttime="20230620 19:40:47.293" endtime="20230620 19:40:47.371"/>
+</kw>
+<status status="PASS" starttime="20230620 19:40:47.244" endtime="20230620 19:40:47.371"/>
+</kw>
+<kw name="And user add product to cart" library="ProductDetailPage">
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>${buttonAddToCart}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" starttime="20230620 19:40:47.372" endtime="20230620 19:40:48.382"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${buttonAddToCart}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20230620 19:40:48.391" level="INFO">Clicking element 'xpath=//*[@content-desc="Add To Cart button"]'.</msg>
+<status status="PASS" starttime="20230620 19:40:48.383" endtime="20230620 19:40:48.471"/>
+</kw>
+<status status="PASS" starttime="20230620 19:40:47.372" endtime="20230620 19:40:48.471"/>
+</kw>
+<kw name="And user go to cart page" library="ProductDetailPage">
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>${iconCart}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" starttime="20230620 19:40:48.472" endtime="20230620 19:40:48.525"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${iconCart}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20230620 19:40:48.533" level="INFO">Clicking element 'xpath=//*[@content-desc="cart badge"]'.</msg>
+<status status="PASS" starttime="20230620 19:40:48.525" endtime="20230620 19:40:49.354"/>
+</kw>
+<status status="PASS" starttime="20230620 19:40:48.472" endtime="20230620 19:40:49.354"/>
+</kw>
+<kw name="Then user is on cart page" library="CartPage">
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>${textProductNameOnCart}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" starttime="20230620 19:40:49.355" endtime="20230620 19:40:50.040"/>
+</kw>
+<kw name="Element Should Be Visible" library="AppiumLibrary">
+<arg>${textProductNameOnCart}</arg>
+<doc>Verifies that element identified with locator is visible.</doc>
+<status status="PASS" starttime="20230620 19:40:50.041" endtime="20230620 19:40:50.098"/>
+</kw>
+<kw name="Element Should Be Visible" library="AppiumLibrary">
+<arg>${textProductPriceOnCart}</arg>
+<doc>Verifies that element identified with locator is visible.</doc>
+<status status="PASS" starttime="20230620 19:40:50.098" endtime="20230620 19:40:50.135"/>
+</kw>
+<kw name="Element Should Be Visible" library="AppiumLibrary">
+<arg>${textTotalPriceOnCart}</arg>
+<doc>Verifies that element identified with locator is visible.</doc>
+<status status="PASS" starttime="20230620 19:40:50.136" endtime="20230620 19:40:50.172"/>
+</kw>
+<kw name="Element Should Be Visible" library="AppiumLibrary">
+<arg>${buttonCheckout}</arg>
+<doc>Verifies that element identified with locator is visible.</doc>
+<status status="PASS" starttime="20230620 19:40:50.172" endtime="20230620 19:40:50.209"/>
+</kw>
+<status status="PASS" starttime="20230620 19:40:49.355" endtime="20230620 19:40:50.209"/>
+</kw>
+<status status="PASS" starttime="20230620 19:40:38.561" endtime="20230620 19:40:50.209"/>
+</kw>
+<kw name="When user go to checkout page" library="CartPage">
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>${buttonCheckout}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" starttime="20230620 19:40:50.210" endtime="20230620 19:40:50.242"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${buttonCheckout}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20230620 19:40:50.250" level="INFO">Clicking element 'xpath=//*[@content-desc="Proceed To Checkout button"]'.</msg>
+<status status="PASS" starttime="20230620 19:40:50.242" endtime="20230620 19:40:50.320"/>
+</kw>
+<status status="PASS" starttime="20230620 19:40:50.209" endtime="20230620 19:40:50.320"/>
+</kw>
+<kw name="Then user is on checkout page" library="CheckoutPage">
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>${inputNameOnCheckoutPage}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" starttime="20230620 19:40:50.321" endtime="20230620 19:40:51.491"/>
+</kw>
+<kw name="Element Should Be Visible" library="AppiumLibrary">
+<arg>${inputNameOnCheckoutPage}</arg>
+<doc>Verifies that element identified with locator is visible.</doc>
+<status status="PASS" starttime="20230620 19:40:51.492" endtime="20230620 19:40:51.545"/>
+</kw>
+<kw name="Element Should Be Visible" library="AppiumLibrary">
+<arg>${inputAddressLine1}</arg>
+<doc>Verifies that element identified with locator is visible.</doc>
+<status status="PASS" starttime="20230620 19:40:51.545" endtime="20230620 19:40:51.572"/>
+</kw>
+<kw name="Element Should Be Visible" library="AppiumLibrary">
+<arg>${inputCity}</arg>
+<doc>Verifies that element identified with locator is visible.</doc>
+<status status="PASS" starttime="20230620 19:40:51.573" endtime="20230620 19:40:51.604"/>
+</kw>
+<kw name="Element Should Be Visible" library="AppiumLibrary">
+<arg>${buttonGoToPayment}</arg>
+<doc>Verifies that element identified with locator is visible.</doc>
+<status status="PASS" starttime="20230620 19:40:51.604" endtime="20230620 19:40:51.634"/>
+</kw>
+<status status="PASS" starttime="20230620 19:40:50.321" endtime="20230620 19:40:51.634"/>
+</kw>
+<kw name="When user input address data for checkout" library="CheckoutPage">
+<kw name="user input name for checkout" library="CheckoutPage">
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>${inputNameOnCheckoutPage}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" starttime="20230620 19:40:51.635" endtime="20230620 19:40:51.666"/>
+</kw>
+<kw name="Input Text" library="AppiumLibrary">
+<arg>${inputNameOnCheckoutPage}</arg>
+<arg>anggadirja</arg>
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<msg timestamp="20230620 19:40:51.675" level="INFO">Typing text 'anggadirja' into text field 'xpath=//*[@content-desc="Full Name* input field"]'</msg>
+<status status="PASS" starttime="20230620 19:40:51.666" endtime="20230620 19:40:51.724"/>
+</kw>
+<status status="PASS" starttime="20230620 19:40:51.635" endtime="20230620 19:40:51.724"/>
+</kw>
+<kw name="user input address line 1 for checkout" library="CheckoutPage">
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>${inputAddressLine1}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" starttime="20230620 19:40:51.725" endtime="20230620 19:40:52.264"/>
+</kw>
+<kw name="Input Text" library="AppiumLibrary">
+<arg>${inputAddressLine1}</arg>
+<arg>JL Ciliwung</arg>
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<msg timestamp="20230620 19:40:52.274" level="INFO">Typing text 'JL Ciliwung' into text field 'xpath=//*[@content-desc="Address Line 1* input field"]'</msg>
+<status status="PASS" starttime="20230620 19:40:52.265" endtime="20230620 19:40:52.840"/>
+</kw>
+<status status="PASS" starttime="20230620 19:40:51.724" endtime="20230620 19:40:52.841"/>
+</kw>
+<kw name="user input address line 2 for checkout" library="CheckoutPage">
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>${inputAddressLine2}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" starttime="20230620 19:40:52.842" endtime="20230620 19:40:53.402"/>
+</kw>
+<kw name="Input Text" library="AppiumLibrary">
+<arg>${inputAddressLine2}</arg>
+<arg>rumah angga</arg>
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<msg timestamp="20230620 19:40:53.411" level="INFO">Typing text 'rumah angga' into text field 'xpath=//*[@content-desc="Address Line 2 input field"]'</msg>
+<status status="PASS" starttime="20230620 19:40:53.402" endtime="20230620 19:40:54.287"/>
+</kw>
+<status status="PASS" starttime="20230620 19:40:52.841" endtime="20230620 19:40:54.287"/>
+</kw>
+<kw name="user input city for checkout" library="CheckoutPage">
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>${inputCity}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" starttime="20230620 19:40:54.288" endtime="20230620 19:40:54.845"/>
+</kw>
+<kw name="Input Text" library="AppiumLibrary">
+<arg>${inputCity}</arg>
+<arg>Jakarta</arg>
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<msg timestamp="20230620 19:40:54.854" level="INFO">Typing text 'Jakarta' into text field 'xpath=//*[@content-desc="City* input field"]'</msg>
+<status status="PASS" starttime="20230620 19:40:54.846" endtime="20230620 19:40:55.416"/>
+</kw>
+<status status="PASS" starttime="20230620 19:40:54.287" endtime="20230620 19:40:55.416"/>
+</kw>
+<kw name="user input zip code for checkout" library="CheckoutPage">
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>${inputZipCode}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" starttime="20230620 19:40:55.417" endtime="20230620 19:40:55.978"/>
+</kw>
+<kw name="Input Text" library="AppiumLibrary">
+<arg>${inputZipCode}</arg>
+<arg>13640</arg>
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<msg timestamp="20230620 19:40:55.987" level="INFO">Typing text '13640' into text field 'xpath=//*[@content-desc="Zip Code* input field"]'</msg>
+<status status="PASS" starttime="20230620 19:40:55.979" endtime="20230620 19:40:56.544"/>
+</kw>
+<status status="PASS" starttime="20230620 19:40:55.416" endtime="20230620 19:40:56.544"/>
+</kw>
+<kw name="user input country for checkout" library="CheckoutPage">
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>${inputCountry}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" starttime="20230620 19:40:56.545" endtime="20230620 19:40:57.048"/>
+</kw>
+<kw name="Input Text" library="AppiumLibrary">
+<arg>${inputCountry}</arg>
+<arg>Indonesia</arg>
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<msg timestamp="20230620 19:40:57.058" level="INFO">Typing text 'Indonesia' into text field 'xpath=//*[@content-desc="Country* input field"]'</msg>
+<status status="PASS" starttime="20230620 19:40:57.048" endtime="20230620 19:40:57.643"/>
+</kw>
+<status status="PASS" starttime="20230620 19:40:56.544" endtime="20230620 19:40:57.643"/>
+</kw>
+<status status="PASS" starttime="20230620 19:40:51.635" endtime="20230620 19:40:57.643"/>
+</kw>
+<kw name="And user click go to payment page" library="CheckoutPage">
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>${buttonGoToPayment}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" starttime="20230620 19:40:57.645" endtime="20230620 19:40:58.147"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${buttonGoToPayment}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20230620 19:40:58.156" level="INFO">Clicking element 'xpath=//*[@content-desc="To Payment button"]'.</msg>
+<status status="PASS" starttime="20230620 19:40:58.147" endtime="20230620 19:40:58.257"/>
+</kw>
+<status status="PASS" starttime="20230620 19:40:57.644" endtime="20230620 19:40:58.257"/>
+</kw>
+<kw name="Then user is on payment page" library="PaymentPage">
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>${inputNameOnPaymentPage}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" starttime="20230620 19:40:58.258" endtime="20230620 19:40:58.316"/>
+</kw>
+<status status="PASS" starttime="20230620 19:40:58.258" endtime="20230620 19:40:58.317"/>
+</kw>
+<kw name="When user input payment credentials" library="PaymentPage">
+<kw name="user get payment credentials" library="PaymentPage">
+<kw name="Set Global Variable" library="BuiltIn">
+<arg>${NameCC}</arg>
+<arg>Rebecca Winter</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<msg timestamp="20230620 19:40:58.321" level="INFO">${NameCC} = Rebecca Winter</msg>
+<status status="PASS" starttime="20230620 19:40:58.318" endtime="20230620 19:40:58.322"/>
+</kw>
+<kw name="Set Global Variable" library="BuiltIn">
+<arg>${NoCC}</arg>
+<arg>325812657568789</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<msg timestamp="20230620 19:40:58.325" level="INFO">${NoCC} = 325812657568789</msg>
+<status status="PASS" starttime="20230620 19:40:58.322" endtime="20230620 19:40:58.325"/>
+</kw>
+<kw name="Set Global Variable" library="BuiltIn">
+<arg>${ExpCC}</arg>
+<arg>0325</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<msg timestamp="20230620 19:40:58.326" level="INFO">${ExpCC} = 0325</msg>
+<status status="PASS" starttime="20230620 19:40:58.325" endtime="20230620 19:40:58.326"/>
+</kw>
+<kw name="Set Global Variable" library="BuiltIn">
+<arg>${CodeCC}</arg>
+<arg>123</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<msg timestamp="20230620 19:40:58.328" level="INFO">${CodeCC} = 123</msg>
+<status status="PASS" starttime="20230620 19:40:58.326" endtime="20230620 19:40:58.328"/>
+</kw>
+<status status="PASS" starttime="20230620 19:40:58.317" endtime="20230620 19:40:58.328"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>${inputNameOnPaymentPage}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" starttime="20230620 19:40:58.328" endtime="20230620 19:40:59.351"/>
+</kw>
+<kw name="Input Text" library="AppiumLibrary">
+<arg>${inputNameOnPaymentPage}</arg>
+<arg>${NameCC}</arg>
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<msg timestamp="20230620 19:40:59.362" level="INFO">Typing text 'Rebecca Winter' into text field 'xpath=(//*[contains(@content-desc,"Full Name")])[1]'</msg>
+<status status="PASS" starttime="20230620 19:40:59.352" endtime="20230620 19:40:59.982"/>
+</kw>
+<kw name="Input Text" library="AppiumLibrary">
+<arg>${inputCardNumber}</arg>
+<arg>${NoCC}</arg>
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<msg timestamp="20230620 19:40:59.993" level="INFO">Typing text '325812657568789' into text field 'xpath=(//*[contains(@content-desc,"Card Number")])[1]'</msg>
+<status status="PASS" starttime="20230620 19:40:59.983" endtime="20230620 19:41:01.386"/>
+</kw>
+<kw name="Input Text" library="AppiumLibrary">
+<arg>${inputExpiredDateOnPaymentPage}</arg>
+<arg>${ExpCC}</arg>
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<msg timestamp="20230620 19:41:01.397" level="INFO">Typing text '0325' into text field 'xpath=(//*[contains(@content-desc,"Expiration Date")])[1]'</msg>
+<status status="PASS" starttime="20230620 19:41:01.386" endtime="20230620 19:41:02.483"/>
+</kw>
+<kw name="Input Text" library="AppiumLibrary">
+<arg>${inputSecurityCode}</arg>
+<arg>${CodeCC}</arg>
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<msg timestamp="20230620 19:41:02.493" level="INFO">Typing text '123' into text field 'xpath=(//*[contains(@content-desc,"Security Code")])[1]'</msg>
+<status status="PASS" starttime="20230620 19:41:02.483" endtime="20230620 19:41:03.610"/>
+</kw>
+<status status="PASS" starttime="20230620 19:40:58.317" endtime="20230620 19:41:03.611"/>
+</kw>
+<kw name="And user click button review order" library="PaymentPage">
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>${buttonReviewOrder}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" starttime="20230620 19:41:03.612" endtime="20230620 19:41:04.172"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${buttonReviewOrder}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20230620 19:41:04.181" level="INFO">Clicking element 'xpath=//*[@content-desc="Review Order button"]'.</msg>
+<status status="PASS" starttime="20230620 19:41:04.173" endtime="20230620 19:41:04.255"/>
+</kw>
+<status status="PASS" starttime="20230620 19:41:03.611" endtime="20230620 19:41:04.256"/>
+</kw>
+<kw name="Then user is on review order page" library="ReviewOrderPage">
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>${buttonPlaceOrder}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" starttime="20230620 19:41:04.257" endtime="20230620 19:41:05.402"/>
+</kw>
+<kw name="Element Should Be Visible" library="AppiumLibrary">
+<arg>${buttonPlaceOrder}</arg>
+<doc>Verifies that element identified with locator is visible.</doc>
+<status status="PASS" starttime="20230620 19:41:05.402" endtime="20230620 19:41:05.461"/>
+</kw>
+<status status="PASS" starttime="20230620 19:41:04.257" endtime="20230620 19:41:05.461"/>
+</kw>
+<kw name="When user click place order" library="ReviewOrderPage">
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>${buttonPlaceOrder}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" starttime="20230620 19:41:05.462" endtime="20230620 19:41:05.497"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${buttonPlaceOrder}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20230620 19:41:05.504" level="INFO">Clicking element 'xpath=//*[@content-desc="Place Order button"]'.</msg>
+<status status="PASS" starttime="20230620 19:41:05.497" endtime="20230620 19:41:05.570"/>
+</kw>
+<status status="PASS" starttime="20230620 19:41:05.462" endtime="20230620 19:41:05.570"/>
+</kw>
+<kw name="Then user is on checkout complete page" library="CheckoutCompletePage">
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>${buttonContinueShopping}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" starttime="20230620 19:41:05.571" endtime="20230620 19:41:06.731"/>
+</kw>
+<kw name="Element Should Be Visible" library="AppiumLibrary">
+<arg>${buttonContinueShopping}</arg>
+<doc>Verifies that element identified with locator is visible.</doc>
+<status status="PASS" starttime="20230620 19:41:06.732" endtime="20230620 19:41:06.778"/>
+</kw>
+<status status="PASS" starttime="20230620 19:41:05.570" endtime="20230620 19:41:06.778"/>
+</kw>
+<status status="PASS" starttime="20230620 19:40:38.559" endtime="20230620 19:41:06.778"/>
+</kw>
+<doc>this scenario to verify user can create order</doc>
+<tag>order</tag>
+<tag>positive</tag>
+<tag>prod</tag>
+<status status="PASS" starttime="20230620 19:40:38.559" endtime="20230620 19:41:06.779"/>
+</test>
+<kw name="After Suite" library="prod" type="TEARDOWN">
+<kw name="Remove Application" library="AppiumLibrary">
+<arg>${APP PACKAGE}</arg>
+<doc>Removes the application that is identified with an application id</doc>
+<status status="PASS" starttime="20230620 19:41:06.781" endtime="20230620 19:41:07.253"/>
+</kw>
+<kw name="Close Application" library="AppiumLibrary">
+<doc>Closes the current application and also close webdriver session.</doc>
+<status status="PASS" starttime="20230620 19:41:07.253" endtime="20230620 19:41:07.588"/>
+</kw>
+<status status="PASS" starttime="20230620 19:41:06.780" endtime="20230620 19:41:07.588"/>
+</kw>
+<status status="PASS" starttime="20230620 19:40:32.676" endtime="20230620 19:41:07.588"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">order</stat>
+<stat pass="1" fail="0" skip="0">positive</stat>
+<stat pass="1" fail="0" skip="0">prod</stat>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="OrderSuite">OrderSuite</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

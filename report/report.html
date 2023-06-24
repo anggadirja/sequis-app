@@ -5,7 +5,7 @@
 <meta http-equiv="Pragma" content="no-cache">
 <meta http-equiv="Expires" content="-1">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta content="Robot Framework 5.0.1 (Python 3.9.6 on darwin)" name="Generator">
+<meta content="Robot Framework 6.1 (Python 3.9.6 on darwin)" name="Generator">
 <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64,AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAKcAAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAAqAAAAAAAAAAAAAAAAAAAALIAAAD/AAAA4AAAANwAAADcAAAA3AAAANwAAADcAAAA3AAAANwAAADcAAAA4AAAAP8AAACxAAAAAAAAAKYAAAD/AAAAuwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAC/AAAA/wAAAKkAAAD6AAAAzAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAN8AAAD/AAAA+gAAAMMAAAAAAAAAAgAAAGsAAABrAAAAawAAAGsAAABrAAAAawAAAGsAAABrAAAADAAAAAAAAADaAAAA/wAAAPoAAADDAAAAAAAAAIsAAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAANEAAAAAAAAA2gAAAP8AAAD6AAAAwwAAAAAAAAAAAAAAMgAAADIAAAAyAAAAMgAAADIAAAAyAAAAMgAAADIAAAAFAAAAAAAAANoAAAD/AAAA+gAAAMMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADaAAAA/wAAAPoAAADDAAAAAAAAADwAAAB8AAAAAAAAAGAAAABcAAAAAAAAAH8AAABKAAAAAAAAAAAAAAAAAAAA2gAAAP8AAAD6AAAAwwAAAAAAAADCAAAA/wAAACkAAADqAAAA4QAAAAAAAAD7AAAA/wAAALAAAAAGAAAAAAAAANoAAAD/AAAA+gAAAMMAAAAAAAAAIwAAAP4AAAD/AAAA/wAAAGAAAAAAAAAAAAAAAMkAAAD/AAAAigAAAAAAAADaAAAA/wAAAPoAAADDAAAAAAAAAAAAAAAIAAAAcAAAABkAAAAAAAAAAAAAAAAAAAAAAAAAEgAAAAAAAAAAAAAA2gAAAP8AAAD7AAAAywAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAN4AAAD/AAAAqwAAAP8AAACvAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAALIAAAD/AAAAsgAAAAAAAAC5AAAA/wAAAMoAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMkAAAD/AAAAvAAAAAAAAAAAAAAAAAAAAKwAAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAArQAAAAAAAAAAwAMAAIABAAAf+AAAP/wAAD/8AAAgBAAAP/wAAD/8AAA//AAAJIwAADHEAAA//AAAP/wAAB/4AACAAQAAwAMAAA==">
 <style media="all" type="text/css">
 /* Generic and misc styles */
@@ -1150,7 +1150,7 @@ window.testdata = function () {
     var LEVELS = ['TRACE', 'DEBUG', 'INFO', 'WARN', 'ERROR', 'FAIL', 'SKIP'];
     var STATUSES = ['FAIL', 'PASS', 'SKIP', 'NOT RUN'];
     var KEYWORD_TYPES = ['KEYWORD', 'SETUP', 'TEARDOWN', 'FOR', 'ITERATION', 'IF', 'ELSE IF', 'ELSE', 'RETURN',
-                         'TRY', 'EXCEPT', 'FINALLY', 'WHILE', 'CONTINUE', 'BREAK'];
+                         'TRY', 'EXCEPT', 'FINALLY', 'WHILE', 'CONTINUE', 'BREAK', 'ERROR'];
     function addElement(elem) {
         if (!elem.id)
             elem.id = uniqueId();
@@ -1629,22 +1629,22 @@ storage = function () {
 window.output = {};
 </script>
 <script type="text/javascript">
-window.output["suite"] = [1,2,3,0,[],[1,0,34912],[],[[4,0,5,[6,7,8],[1,5883,28220],[]]],[],[1,1,0,0]];
+window.output["suite"] = [1,2,3,0,[],[1,0,84166],[[4,5,6,0,[],[1,28,33272],[],[[7,0,8,[9,10,11,12,13,14],[1,11878,12690],[]],[15,0,16,[9,12,17,14],[1,24568,7618],[]]],[],[2,2,0,0]],[18,19,20,0,[],[1,33302,50862],[],[[21,0,22,[23,17,14],[1,47380,35495],[]]],[],[1,1,0,0]]],[],[],[3,3,0,0]];
 </script>
 <script type="text/javascript">
 window.output["strings"] = [];
 </script>
 <script type="text/javascript">
-window.output["strings"] = window.output["strings"].concat(["*","*OrderSuite","*/Users/sehatq/Documents/sequis-app/TestSuite/OrderSuite.robot","*../TestSuite/OrderSuite.robot","*verify user can create order","*<p>this scenario to verify user can create order\x3c/p>","*order","*positive","*prod"]);
+window.output["strings"] = window.output["strings"].concat(["*","*TestSuite","*/Users/mbp2020/Documents/sequis-app/TestSuite","*../TestSuite","*LoginSuite","*/Users/mbp2020/Documents/sequis-app/TestSuite/LoginSuite.robot","*../TestSuite/LoginSuite.robot","*verify user can input latlong fron geo location on login page","*<p>this scenario to verify user can input latlong on login page\x3c/p>","*credentials","*geolocation","*latlong","*login","*negative","*prod","*verify user can login with autofill credentials","*<p>this scenario to verify user can login with autofill credentials\x3c/p>","*positive","*OrderSuite","*/Users/mbp2020/Documents/sequis-app/TestSuite/OrderSuite.robot","*../TestSuite/OrderSuite.robot","*verify user can create order","*<p>this scenario to verify user can create order\x3c/p>","*order"]);
 </script>
 <script type="text/javascript">
-window.output["stats"] = [[{"elapsed":"00:00:28","fail":0,"label":"All Tests","pass":1,"skip":0}],[{"elapsed":"00:00:28","fail":0,"label":"order","pass":1,"skip":0},{"elapsed":"00:00:28","fail":0,"label":"positive","pass":1,"skip":0},{"elapsed":"00:00:28","fail":0,"label":"prod","pass":1,"skip":0}],[{"elapsed":"00:00:35","fail":0,"id":"s1","label":"OrderSuite","name":"OrderSuite","pass":1,"skip":0}]];
+window.output["stats"] = [[{"elapsed":"00:00:56","fail":0,"label":"All Tests","pass":3,"skip":0}],[{"elapsed":"00:00:20","fail":0,"label":"credentials","pass":2,"skip":0},{"elapsed":"00:00:13","fail":0,"label":"geolocation","pass":1,"skip":0},{"elapsed":"00:00:13","fail":0,"label":"latlong","pass":1,"skip":0},{"elapsed":"00:00:20","fail":0,"label":"login","pass":2,"skip":0},{"elapsed":"00:00:13","fail":0,"label":"negative","pass":1,"skip":0},{"elapsed":"00:00:35","fail":0,"label":"order","pass":1,"skip":0},{"elapsed":"00:00:43","fail":0,"label":"positive","pass":2,"skip":0},{"elapsed":"00:00:56","fail":0,"label":"prod","pass":3,"skip":0}],[{"elapsed":"00:01:24","fail":0,"id":"s1","label":"TestSuite","name":"TestSuite","pass":3,"skip":0},{"elapsed":"00:00:33","fail":0,"id":"s1-s1","label":"TestSuite.LoginSuite","name":"LoginSuite","pass":2,"skip":0},{"elapsed":"00:00:51","fail":0,"id":"s1-s2","label":"TestSuite.OrderSuite","name":"OrderSuite","pass":1,"skip":0}]];
 </script>
 <script type="text/javascript">
-window.output["baseMillis"] = 1687264832676;
+window.output["baseMillis"] = 1687576207050;
 </script>
 <script type="text/javascript">
-window.output["generated"] = 34924;
+window.output["generated"] = 84238;
 </script>
 <script type="text/javascript">
 window.output["expand_keywords"] = null;
@@ -1894,8 +1894,8 @@ function searchTests(suitePattern, testPattern, includePattern, excludePattern) 
 function scrollToSelector(base, query) {
     $('#test-details-container').css('min-height', $(window).height());
     var anchor = query ? base + '?' + encodeURIComponent(query) : base;
-    window.location.hash = '';
     window.location.hash = window.prevLocationHash = anchor;
+    document.getElementById('test-details-container').scrollIntoView();
 }
 
 function renderSelector(args, template, stats) {

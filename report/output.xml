@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 6.1 (Python 3.9.6 on darwin)" generated="20230624 10:10:07.048" rpa="false" schemaversion="4">
+<robot generator="Robot 6.1 (Python 3.9.6 on darwin)" generated="20230625 18:36:20.634" rpa="false" schemaversion="4">
 <suite id="s1" name="TestSuite" source="/Users/mbp2020/Documents/sequis-app/TestSuite">
 <suite id="s1-s1" name="LoginSuite" source="/Users/mbp2020/Documents/sequis-app/TestSuite/LoginSuite.robot">
 <kw name="Start Application on Local" library="prod" type="SETUP">
@@ -7,8 +7,8 @@
 <var>${true}</var>
 <arg>true</arg>
 <doc>Converts the given item to Boolean true or false.</doc>
-<msg timestamp="20230624 10:10:07.337" level="INFO">${true} = True</msg>
-<status status="PASS" starttime="20230624 10:10:07.337" endtime="20230624 10:10:07.337"/>
+<msg timestamp="20230625 18:36:20.819" level="INFO">${true} = True</msg>
+<status status="PASS" starttime="20230625 18:36:20.819" endtime="20230625 18:36:20.819"/>
 </kw>
 <kw name="Open Application" library="AppiumLibrary">
 <arg>http://127.0.0.1:4723/wd/hub</arg>
@@ -34,9 +34,9 @@ Please check https://github.com/appium/appium/blob/master/docs/en/writing-runnin
 | remote_url          | Yes    | Appium server url |
 | alias               | no     | alias             |
 | strict_ssl          | No     | allows you to send commands to an invalid certificate host like a self-signed one. |</doc>
-<status status="PASS" starttime="20230624 10:10:07.337" endtime="20230624 10:10:18.927"/>
+<status status="PASS" starttime="20230625 18:36:20.820" endtime="20230625 18:36:30.910"/>
 </kw>
-<status status="PASS" starttime="20230624 10:10:07.336" endtime="20230624 10:10:18.927"/>
+<status status="PASS" starttime="20230625 18:36:20.818" endtime="20230625 18:36:30.910"/>
 </kw>
 <test id="s1-s1-t1" name="verify user can input latlong fron geo location on login page" line="8">
 <kw name="Input latlong value on login page" library="LoginTest">
@@ -45,290 +45,290 @@ Please check https://github.com/appium/appium/blob/master/docs/en/writing-runnin
 <kw name="Wait Until Element Is Visible" library="AppiumLibrary">
 <arg>${imageProduct}</arg>
 <doc>Waits until element specified with `locator` is visible.</doc>
-<msg timestamp="20230624 10:10:20.470" level="INFO">xpath criteria: (//*[@content-desc='products screen']//*[@content-desc='store item'])[1]</msg>
-<status status="PASS" starttime="20230624 10:10:18.933" endtime="20230624 10:10:20.470"/>
+<msg timestamp="20230625 18:36:32.241" level="INFO">xpath criteria: (//*[@content-desc='products screen']//*[@content-desc='store item'])[1]</msg>
+<status status="PASS" starttime="20230625 18:36:30.922" endtime="20230625 18:36:32.241"/>
 </kw>
 <kw name="Element Should Be Visible" library="AppiumLibrary">
 <arg>${imageProduct}</arg>
 <doc>Verifies that element identified with locator is visible.</doc>
-<msg timestamp="20230624 10:10:20.708" level="INFO">xpath criteria: (//*[@content-desc='products screen']//*[@content-desc='store item'])[1]</msg>
-<status status="PASS" starttime="20230624 10:10:20.470" endtime="20230624 10:10:20.708"/>
+<msg timestamp="20230625 18:36:32.454" level="INFO">xpath criteria: (//*[@content-desc='products screen']//*[@content-desc='store item'])[1]</msg>
+<status status="PASS" starttime="20230625 18:36:32.241" endtime="20230625 18:36:32.454"/>
 </kw>
-<status status="PASS" starttime="20230624 10:10:18.932" endtime="20230624 10:10:20.708"/>
+<status status="PASS" starttime="20230625 18:36:30.921" endtime="20230625 18:36:32.454"/>
 </kw>
 <kw name="When user open hamburger menu" library="ProductListPage">
 <kw name="Wait Until Element Is Visible" library="AppiumLibrary">
 <arg>${buttonMenu}</arg>
 <doc>Waits until element specified with `locator` is visible.</doc>
-<msg timestamp="20230624 10:10:20.904" level="INFO">xpath criteria: //*[@content-desc="open menu"]</msg>
-<status status="PASS" starttime="20230624 10:10:20.708" endtime="20230624 10:10:20.904"/>
+<msg timestamp="20230625 18:36:32.620" level="INFO">xpath criteria: //*[@content-desc="open menu"]</msg>
+<status status="PASS" starttime="20230625 18:36:32.455" endtime="20230625 18:36:32.620"/>
 </kw>
 <kw name="Click Element" library="AppiumLibrary">
 <arg>${buttonMenu}</arg>
 <doc>Click element identified by `locator`.</doc>
-<msg timestamp="20230624 10:10:20.908" level="INFO">Clicking element 'xpath=//*[@content-desc="open menu"]'.</msg>
-<msg timestamp="20230624 10:10:21.140" level="INFO">xpath criteria: //*[@content-desc="open menu"]</msg>
-<status status="PASS" starttime="20230624 10:10:20.904" endtime="20230624 10:10:21.140"/>
+<msg timestamp="20230625 18:36:32.622" level="INFO">Clicking element 'xpath=//*[@content-desc="open menu"]'.</msg>
+<msg timestamp="20230625 18:36:32.837" level="INFO">xpath criteria: //*[@content-desc="open menu"]</msg>
+<status status="PASS" starttime="20230625 18:36:32.620" endtime="20230625 18:36:32.837"/>
 </kw>
-<status status="PASS" starttime="20230624 10:10:20.708" endtime="20230624 10:10:21.140"/>
+<status status="PASS" starttime="20230625 18:36:32.455" endtime="20230625 18:36:32.837"/>
 </kw>
 <kw name="And user go to geo location page" library="ProductListPage">
 <kw name="Wait Until Element Is Visible" library="AppiumLibrary">
 <arg>${textGeoLocation}</arg>
 <doc>Waits until element specified with `locator` is visible.</doc>
-<msg timestamp="20230624 10:10:22.774" level="INFO">xpath criteria: //*[@content-desc="menu item geo location"]
+<msg timestamp="20230625 18:36:34.496" level="INFO">xpath criteria: //*[@content-desc="menu item geo location"]
 xpath criteria: //*[@content-desc="menu item geo location"]</msg>
-<status status="PASS" starttime="20230624 10:10:21.140" endtime="20230624 10:10:22.774"/>
+<status status="PASS" starttime="20230625 18:36:32.838" endtime="20230625 18:36:34.496"/>
 </kw>
 <kw name="Click Element" library="AppiumLibrary">
 <arg>${textGeoLocation}</arg>
 <doc>Click element identified by `locator`.</doc>
-<msg timestamp="20230624 10:10:22.776" level="INFO">Clicking element 'xpath=//*[@content-desc="menu item geo location"]'.</msg>
-<msg timestamp="20230624 10:10:22.914" level="INFO">xpath criteria: //*[@content-desc="menu item geo location"]</msg>
-<status status="PASS" starttime="20230624 10:10:22.774" endtime="20230624 10:10:22.914"/>
+<msg timestamp="20230625 18:36:34.498" level="INFO">Clicking element 'xpath=//*[@content-desc="menu item geo location"]'.</msg>
+<msg timestamp="20230625 18:36:34.646" level="INFO">xpath criteria: //*[@content-desc="menu item geo location"]</msg>
+<status status="PASS" starttime="20230625 18:36:34.496" endtime="20230625 18:36:34.646"/>
 </kw>
-<status status="PASS" starttime="20230624 10:10:21.140" endtime="20230624 10:10:22.914"/>
+<status status="PASS" starttime="20230625 18:36:32.838" endtime="20230625 18:36:34.646"/>
 </kw>
 <kw name="Then user is on geo location page" library="GeoLocationPage">
 <kw name="Wait Until Element Is Visible" library="AppiumLibrary">
 <arg>${buttonStartObserving}</arg>
 <doc>Waits until element specified with `locator` is visible.</doc>
-<msg timestamp="20230624 10:10:24.531" level="INFO">xpath criteria: //*[@content-desc="Start Observing button"]
+<msg timestamp="20230625 18:36:36.250" level="INFO">xpath criteria: //*[@content-desc="Start Observing button"]
 xpath criteria: //*[@content-desc="Start Observing button"]</msg>
-<status status="PASS" starttime="20230624 10:10:22.915" endtime="20230624 10:10:24.531"/>
+<status status="PASS" starttime="20230625 18:36:34.647" endtime="20230625 18:36:36.250"/>
 </kw>
 <kw name="Element Should Be Visible" library="AppiumLibrary">
 <arg>${buttonStartObserving}</arg>
 <doc>Verifies that element identified with locator is visible.</doc>
-<msg timestamp="20230624 10:10:24.592" level="INFO">xpath criteria: //*[@content-desc="Start Observing button"]</msg>
-<status status="PASS" starttime="20230624 10:10:24.531" endtime="20230624 10:10:24.592"/>
+<msg timestamp="20230625 18:36:36.329" level="INFO">xpath criteria: //*[@content-desc="Start Observing button"]</msg>
+<status status="PASS" starttime="20230625 18:36:36.250" endtime="20230625 18:36:36.329"/>
 </kw>
 <kw name="Element Should Be Visible" library="AppiumLibrary">
 <arg>${buttonStopObserving}</arg>
 <doc>Verifies that element identified with locator is visible.</doc>
-<msg timestamp="20230624 10:10:24.792" level="INFO">xpath criteria: //*[@content-desc="Stop Observing button"]</msg>
-<status status="PASS" starttime="20230624 10:10:24.592" endtime="20230624 10:10:24.793"/>
+<msg timestamp="20230625 18:36:36.616" level="INFO">xpath criteria: //*[@content-desc="Stop Observing button"]</msg>
+<status status="PASS" starttime="20230625 18:36:36.329" endtime="20230625 18:36:36.616"/>
 </kw>
-<status status="PASS" starttime="20230624 10:10:22.914" endtime="20230624 10:10:24.793"/>
+<status status="PASS" starttime="20230625 18:36:34.646" endtime="20230625 18:36:36.616"/>
 </kw>
-<status status="PASS" starttime="20230624 10:10:18.931" endtime="20230624 10:10:24.793"/>
+<status status="PASS" starttime="20230625 18:36:30.918" endtime="20230625 18:36:36.617"/>
 </kw>
 <kw name="When Get latlong from geo location" library="LoginTest">
 <kw name="Given user is on geo location page" library="GeoLocationPage">
 <kw name="Wait Until Element Is Visible" library="AppiumLibrary">
 <arg>${buttonStartObserving}</arg>
 <doc>Waits until element specified with `locator` is visible.</doc>
-<msg timestamp="20230624 10:10:24.947" level="INFO">xpath criteria: //*[@content-desc="Start Observing button"]</msg>
-<status status="PASS" starttime="20230624 10:10:24.798" endtime="20230624 10:10:24.947"/>
+<msg timestamp="20230625 18:36:36.701" level="INFO">xpath criteria: //*[@content-desc="Start Observing button"]</msg>
+<status status="PASS" starttime="20230625 18:36:36.618" endtime="20230625 18:36:36.701"/>
 </kw>
 <kw name="Element Should Be Visible" library="AppiumLibrary">
 <arg>${buttonStartObserving}</arg>
 <doc>Verifies that element identified with locator is visible.</doc>
-<msg timestamp="20230624 10:10:25.018" level="INFO">xpath criteria: //*[@content-desc="Start Observing button"]</msg>
-<status status="PASS" starttime="20230624 10:10:24.947" endtime="20230624 10:10:25.018"/>
+<msg timestamp="20230625 18:36:36.761" level="INFO">xpath criteria: //*[@content-desc="Start Observing button"]</msg>
+<status status="PASS" starttime="20230625 18:36:36.702" endtime="20230625 18:36:36.762"/>
 </kw>
 <kw name="Element Should Be Visible" library="AppiumLibrary">
 <arg>${buttonStopObserving}</arg>
 <doc>Verifies that element identified with locator is visible.</doc>
-<msg timestamp="20230624 10:10:25.080" level="INFO">xpath criteria: //*[@content-desc="Stop Observing button"]</msg>
-<status status="PASS" starttime="20230624 10:10:25.018" endtime="20230624 10:10:25.080"/>
+<msg timestamp="20230625 18:36:36.836" level="INFO">xpath criteria: //*[@content-desc="Stop Observing button"]</msg>
+<status status="PASS" starttime="20230625 18:36:36.762" endtime="20230625 18:36:36.836"/>
 </kw>
-<status status="PASS" starttime="20230624 10:10:24.796" endtime="20230624 10:10:25.080"/>
+<status status="PASS" starttime="20230625 18:36:36.618" endtime="20230625 18:36:36.836"/>
 </kw>
 <kw name="When user get latitude value" library="GeoLocationPage">
 <kw name="Wait Until Element Is Visible" library="AppiumLibrary">
 <arg>${textLatitudeValue}</arg>
 <doc>Waits until element specified with `locator` is visible.</doc>
-<msg timestamp="20230624 10:10:25.152" level="INFO">xpath criteria: //*[@content-desc="latitude data"]</msg>
-<status status="PASS" starttime="20230624 10:10:25.081" endtime="20230624 10:10:25.153"/>
+<msg timestamp="20230625 18:36:36.912" level="INFO">xpath criteria: //*[@content-desc="latitude data"]</msg>
+<status status="PASS" starttime="20230625 18:36:36.837" endtime="20230625 18:36:36.912"/>
 </kw>
 <kw name="Get Text" library="AppiumLibrary">
 <var>${latitude}</var>
 <arg>${textLatitudeValue}</arg>
 <doc>Get element text (for hybrid and mobile browser use `xpath` locator, others might cause problem)</doc>
-<msg timestamp="20230624 10:10:25.236" level="INFO">Element 'xpath=//*[@content-desc="latitude data"]' text is '37.4219983' </msg>
-<msg timestamp="20230624 10:10:25.236" level="INFO">xpath criteria: //*[@content-desc="latitude data"]</msg>
-<msg timestamp="20230624 10:10:25.236" level="INFO">${latitude} = 37.4219983</msg>
-<status status="PASS" starttime="20230624 10:10:25.153" endtime="20230624 10:10:25.236"/>
+<msg timestamp="20230625 18:36:36.980" level="INFO">Element 'xpath=//*[@content-desc="latitude data"]' text is '37.4219983' </msg>
+<msg timestamp="20230625 18:36:36.980" level="INFO">xpath criteria: //*[@content-desc="latitude data"]</msg>
+<msg timestamp="20230625 18:36:36.980" level="INFO">${latitude} = 37.4219983</msg>
+<status status="PASS" starttime="20230625 18:36:36.912" endtime="20230625 18:36:36.980"/>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <arg>ini latitude : ${latitude}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20230624 10:10:25.236" endtime="20230624 10:10:25.236"/>
+<status status="PASS" starttime="20230625 18:36:36.980" endtime="20230625 18:36:36.981"/>
 </kw>
 <kw name="Set Global Variable" library="BuiltIn">
 <arg>${latitudeValue}</arg>
 <arg>${latitude}</arg>
 <doc>Makes a variable available globally in all tests and suites.</doc>
-<msg timestamp="20230624 10:10:25.238" level="INFO">${latitudeValue} = 37.4219983</msg>
-<status status="PASS" starttime="20230624 10:10:25.237" endtime="20230624 10:10:25.238"/>
+<msg timestamp="20230625 18:36:36.982" level="INFO">${latitudeValue} = 37.4219983</msg>
+<status status="PASS" starttime="20230625 18:36:36.981" endtime="20230625 18:36:36.982"/>
 </kw>
-<status status="PASS" starttime="20230624 10:10:25.081" endtime="20230624 10:10:25.238"/>
+<status status="PASS" starttime="20230625 18:36:36.837" endtime="20230625 18:36:36.982"/>
 </kw>
 <kw name="And user get logitude value" library="GeoLocationPage">
 <kw name="Wait Until Element Is Visible" library="AppiumLibrary">
 <arg>${textLongitudeValue}</arg>
 <doc>Waits until element specified with `locator` is visible.</doc>
-<msg timestamp="20230624 10:10:25.324" level="INFO">xpath criteria: //*[@content-desc="longitude data"]</msg>
-<status status="PASS" starttime="20230624 10:10:25.239" endtime="20230624 10:10:25.324"/>
+<msg timestamp="20230625 18:36:37.069" level="INFO">xpath criteria: //*[@content-desc="longitude data"]</msg>
+<status status="PASS" starttime="20230625 18:36:36.983" endtime="20230625 18:36:37.069"/>
 </kw>
 <kw name="Get Text" library="AppiumLibrary">
 <var>${longitude}</var>
 <arg>${textLongitudeValue}</arg>
 <doc>Get element text (for hybrid and mobile browser use `xpath` locator, others might cause problem)</doc>
-<msg timestamp="20230624 10:10:25.397" level="INFO">Element 'xpath=//*[@content-desc="longitude data"]' text is '-122.084' </msg>
-<msg timestamp="20230624 10:10:25.397" level="INFO">xpath criteria: //*[@content-desc="longitude data"]</msg>
-<msg timestamp="20230624 10:10:25.397" level="INFO">${longitude} = -122.084</msg>
-<status status="PASS" starttime="20230624 10:10:25.324" endtime="20230624 10:10:25.397"/>
+<msg timestamp="20230625 18:36:37.143" level="INFO">Element 'xpath=//*[@content-desc="longitude data"]' text is '-122.084' </msg>
+<msg timestamp="20230625 18:36:37.143" level="INFO">xpath criteria: //*[@content-desc="longitude data"]</msg>
+<msg timestamp="20230625 18:36:37.143" level="INFO">${longitude} = -122.084</msg>
+<status status="PASS" starttime="20230625 18:36:37.069" endtime="20230625 18:36:37.143"/>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <arg>ini longitude : ${longitude}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20230624 10:10:25.397" endtime="20230624 10:10:25.398"/>
+<status status="PASS" starttime="20230625 18:36:37.144" endtime="20230625 18:36:37.144"/>
 </kw>
 <kw name="Set Global Variable" library="BuiltIn">
 <arg>${longitudeValue}</arg>
 <arg>${longitude}</arg>
 <doc>Makes a variable available globally in all tests and suites.</doc>
-<msg timestamp="20230624 10:10:25.400" level="INFO">${longitudeValue} = -122.084</msg>
-<status status="PASS" starttime="20230624 10:10:25.398" endtime="20230624 10:10:25.400"/>
+<msg timestamp="20230625 18:36:37.146" level="INFO">${longitudeValue} = -122.084</msg>
+<status status="PASS" starttime="20230625 18:36:37.144" endtime="20230625 18:36:37.146"/>
 </kw>
-<status status="PASS" starttime="20230624 10:10:25.239" endtime="20230624 10:10:25.400"/>
+<status status="PASS" starttime="20230625 18:36:36.983" endtime="20230625 18:36:37.146"/>
 </kw>
-<status status="PASS" starttime="20230624 10:10:24.794" endtime="20230624 10:10:25.400"/>
+<status status="PASS" starttime="20230625 18:36:36.617" endtime="20230625 18:36:37.146"/>
 </kw>
 <kw name="And Access login page" library="LoginTest">
 <kw name="When user open hamburger menu" library="ProductListPage">
 <kw name="Wait Until Element Is Visible" library="AppiumLibrary">
 <arg>${buttonMenu}</arg>
 <doc>Waits until element specified with `locator` is visible.</doc>
-<msg timestamp="20230624 10:10:25.482" level="INFO">xpath criteria: //*[@content-desc="open menu"]</msg>
-<status status="PASS" starttime="20230624 10:10:25.401" endtime="20230624 10:10:25.482"/>
+<msg timestamp="20230625 18:36:37.225" level="INFO">xpath criteria: //*[@content-desc="open menu"]</msg>
+<status status="PASS" starttime="20230625 18:36:37.147" endtime="20230625 18:36:37.225"/>
 </kw>
 <kw name="Click Element" library="AppiumLibrary">
 <arg>${buttonMenu}</arg>
 <doc>Click element identified by `locator`.</doc>
-<msg timestamp="20230624 10:10:25.484" level="INFO">Clicking element 'xpath=//*[@content-desc="open menu"]'.</msg>
-<msg timestamp="20230624 10:10:25.571" level="INFO">xpath criteria: //*[@content-desc="open menu"]</msg>
-<status status="PASS" starttime="20230624 10:10:25.482" endtime="20230624 10:10:25.571"/>
+<msg timestamp="20230625 18:36:37.227" level="INFO">Clicking element 'xpath=//*[@content-desc="open menu"]'.</msg>
+<msg timestamp="20230625 18:36:37.325" level="INFO">xpath criteria: //*[@content-desc="open menu"]</msg>
+<status status="PASS" starttime="20230625 18:36:37.225" endtime="20230625 18:36:37.325"/>
 </kw>
-<status status="PASS" starttime="20230624 10:10:25.401" endtime="20230624 10:10:25.571"/>
+<status status="PASS" starttime="20230625 18:36:37.147" endtime="20230625 18:36:37.325"/>
 </kw>
 <kw name="And user go to login page" library="ProductListPage">
 <kw name="Wait Until Element Is Visible" library="AppiumLibrary">
 <arg>${textLogin}</arg>
 <doc>Waits until element specified with `locator` is visible.</doc>
-<msg timestamp="20230624 10:10:27.098" level="INFO">xpath criteria: //*[@content-desc="menu item log in"]
+<msg timestamp="20230625 18:36:38.849" level="INFO">xpath criteria: //*[@content-desc="menu item log in"]
 xpath criteria: //*[@content-desc="menu item log in"]</msg>
-<status status="PASS" starttime="20230624 10:10:25.572" endtime="20230624 10:10:27.098"/>
+<status status="PASS" starttime="20230625 18:36:37.326" endtime="20230625 18:36:38.849"/>
 </kw>
 <kw name="Click Element" library="AppiumLibrary">
 <arg>${textLogin}</arg>
 <doc>Click element identified by `locator`.</doc>
-<msg timestamp="20230624 10:10:27.099" level="INFO">Clicking element 'xpath=//*[@content-desc="menu item log in"]'.</msg>
-<msg timestamp="20230624 10:10:27.167" level="INFO">xpath criteria: //*[@content-desc="menu item log in"]</msg>
-<status status="PASS" starttime="20230624 10:10:27.098" endtime="20230624 10:10:27.167"/>
+<msg timestamp="20230625 18:36:38.851" level="INFO">Clicking element 'xpath=//*[@content-desc="menu item log in"]'.</msg>
+<msg timestamp="20230625 18:36:38.940" level="INFO">xpath criteria: //*[@content-desc="menu item log in"]</msg>
+<status status="PASS" starttime="20230625 18:36:38.850" endtime="20230625 18:36:38.940"/>
 </kw>
-<status status="PASS" starttime="20230624 10:10:25.572" endtime="20230624 10:10:27.167"/>
+<status status="PASS" starttime="20230625 18:36:37.325" endtime="20230625 18:36:38.940"/>
 </kw>
 <kw name="Then user is on login page" library="LoginPage">
 <kw name="Wait Until Element Is Visible" library="AppiumLibrary">
 <arg>${inputUsernameOnLoginPage}</arg>
 <doc>Waits until element specified with `locator` is visible.</doc>
-<msg timestamp="20230624 10:10:28.867" level="INFO">xpath criteria: //*[@content-desc="Username input field"]
+<msg timestamp="20230625 18:36:40.799" level="INFO">xpath criteria: //*[@content-desc="Username input field"]
 xpath criteria: //*[@content-desc="Username input field"]</msg>
-<status status="PASS" starttime="20230624 10:10:27.169" endtime="20230624 10:10:28.867"/>
+<status status="PASS" starttime="20230625 18:36:38.941" endtime="20230625 18:36:40.799"/>
 </kw>
 <kw name="Element Should Be Visible" library="AppiumLibrary">
 <arg>${inputUsernameOnLoginPage}</arg>
 <doc>Verifies that element identified with locator is visible.</doc>
-<msg timestamp="20230624 10:10:29.058" level="INFO">xpath criteria: //*[@content-desc="Username input field"]</msg>
-<status status="PASS" starttime="20230624 10:10:28.867" endtime="20230624 10:10:29.058"/>
+<msg timestamp="20230625 18:36:41.281" level="INFO">xpath criteria: //*[@content-desc="Username input field"]</msg>
+<status status="PASS" starttime="20230625 18:36:40.800" endtime="20230625 18:36:41.282"/>
 </kw>
 <kw name="Element Should Be Visible" library="AppiumLibrary">
 <arg>${inputPasswordOnLoginPage}</arg>
 <doc>Verifies that element identified with locator is visible.</doc>
-<msg timestamp="20230624 10:10:29.233" level="INFO">xpath criteria: //*[@content-desc="Password input field"]</msg>
-<status status="PASS" starttime="20230624 10:10:29.059" endtime="20230624 10:10:29.233"/>
+<msg timestamp="20230625 18:36:41.471" level="INFO">xpath criteria: //*[@content-desc="Password input field"]</msg>
+<status status="PASS" starttime="20230625 18:36:41.282" endtime="20230625 18:36:41.471"/>
 </kw>
 <kw name="Element Should Be Visible" library="AppiumLibrary">
 <arg>${buttonLogin}</arg>
 <doc>Verifies that element identified with locator is visible.</doc>
-<msg timestamp="20230624 10:10:29.300" level="INFO">xpath criteria: //*[@content-desc="Login button"]</msg>
-<status status="PASS" starttime="20230624 10:10:29.233" endtime="20230624 10:10:29.300"/>
+<msg timestamp="20230625 18:36:41.689" level="INFO">xpath criteria: //*[@content-desc="Login button"]</msg>
+<status status="PASS" starttime="20230625 18:36:41.471" endtime="20230625 18:36:41.689"/>
 </kw>
-<status status="PASS" starttime="20230624 10:10:27.168" endtime="20230624 10:10:29.300"/>
+<status status="PASS" starttime="20230625 18:36:38.941" endtime="20230625 18:36:41.689"/>
 </kw>
-<status status="PASS" starttime="20230624 10:10:25.400" endtime="20230624 10:10:29.300"/>
+<status status="PASS" starttime="20230625 18:36:37.146" endtime="20230625 18:36:41.689"/>
 </kw>
 <kw name="And user input username for login" library="LoginPage">
 <arg>${latitudeValue}</arg>
 <kw name="Wait Until Element Is Visible" library="AppiumLibrary">
 <arg>${inputUsernameOnLoginPage}</arg>
 <doc>Waits until element specified with `locator` is visible.</doc>
-<msg timestamp="20230624 10:10:29.359" level="INFO">xpath criteria: //*[@content-desc="Username input field"]</msg>
-<status status="PASS" starttime="20230624 10:10:29.301" endtime="20230624 10:10:29.360"/>
+<msg timestamp="20230625 18:36:41.876" level="INFO">xpath criteria: //*[@content-desc="Username input field"]</msg>
+<status status="PASS" starttime="20230625 18:36:41.690" endtime="20230625 18:36:41.876"/>
 </kw>
 <kw name="Input Text" library="AppiumLibrary">
 <arg>${inputUsernameOnLoginPage}</arg>
 <arg>${userName}</arg>
 <doc>Types the given `text` into text field identified by `locator`.</doc>
-<msg timestamp="20230624 10:10:29.362" level="INFO">Typing text '37.4219983' into text field 'xpath=//*[@content-desc="Username input field"]'</msg>
-<msg timestamp="20230624 10:10:29.439" level="INFO">xpath criteria: //*[@content-desc="Username input field"]</msg>
-<status status="PASS" starttime="20230624 10:10:29.360" endtime="20230624 10:10:29.439"/>
+<msg timestamp="20230625 18:36:41.879" level="INFO">Typing text '37.4219983' into text field 'xpath=//*[@content-desc="Username input field"]'</msg>
+<msg timestamp="20230625 18:36:42.171" level="INFO">xpath criteria: //*[@content-desc="Username input field"]</msg>
+<status status="PASS" starttime="20230625 18:36:41.877" endtime="20230625 18:36:42.171"/>
 </kw>
-<status status="PASS" starttime="20230624 10:10:29.300" endtime="20230624 10:10:29.439"/>
+<status status="PASS" starttime="20230625 18:36:41.690" endtime="20230625 18:36:42.171"/>
 </kw>
 <kw name="And user input password for login" library="LoginPage">
 <arg>${longitudeValue}</arg>
 <kw name="Wait Until Element Is Visible" library="AppiumLibrary">
 <arg>${inputPasswordOnLoginPage}</arg>
 <doc>Waits until element specified with `locator` is visible.</doc>
-<msg timestamp="20230624 10:10:30.108" level="INFO">xpath criteria: //*[@content-desc="Password input field"]</msg>
-<status status="PASS" starttime="20230624 10:10:29.440" endtime="20230624 10:10:30.109"/>
+<msg timestamp="20230625 18:36:42.844" level="INFO">xpath criteria: //*[@content-desc="Password input field"]</msg>
+<status status="PASS" starttime="20230625 18:36:42.172" endtime="20230625 18:36:42.844"/>
 </kw>
 <kw name="Input Text" library="AppiumLibrary">
 <arg>${inputPasswordOnLoginPage}</arg>
 <arg>${userPassword}</arg>
 <doc>Types the given `text` into text field identified by `locator`.</doc>
-<msg timestamp="20230624 10:10:30.111" level="INFO">Typing text '-122.084' into text field 'xpath=//*[@content-desc="Password input field"]'</msg>
-<msg timestamp="20230624 10:10:30.184" level="INFO">xpath criteria: //*[@content-desc="Password input field"]</msg>
-<status status="PASS" starttime="20230624 10:10:30.109" endtime="20230624 10:10:30.184"/>
+<msg timestamp="20230625 18:36:42.846" level="INFO">Typing text '-122.084' into text field 'xpath=//*[@content-desc="Password input field"]'</msg>
+<msg timestamp="20230625 18:36:42.907" level="INFO">xpath criteria: //*[@content-desc="Password input field"]</msg>
+<status status="PASS" starttime="20230625 18:36:42.844" endtime="20230625 18:36:42.907"/>
 </kw>
-<status status="PASS" starttime="20230624 10:10:29.440" endtime="20230624 10:10:30.184"/>
+<status status="PASS" starttime="20230625 18:36:42.172" endtime="20230625 18:36:42.907"/>
 </kw>
 <kw name="And user click button login on login page" library="LoginPage">
 <kw name="Wait Until Element Is Visible" library="AppiumLibrary">
 <arg>${buttonLogin}</arg>
 <doc>Waits until element specified with `locator` is visible.</doc>
-<msg timestamp="20230624 10:10:30.840" level="INFO">xpath criteria: //*[@content-desc="Login button"]</msg>
-<status status="PASS" starttime="20230624 10:10:30.185" endtime="20230624 10:10:30.840"/>
+<msg timestamp="20230625 18:36:43.577" level="INFO">xpath criteria: //*[@content-desc="Login button"]</msg>
+<status status="PASS" starttime="20230625 18:36:42.907" endtime="20230625 18:36:43.577"/>
 </kw>
 <kw name="Click Element" library="AppiumLibrary">
 <arg>${buttonLogin}</arg>
 <doc>Click element identified by `locator`.</doc>
-<msg timestamp="20230624 10:10:30.842" level="INFO">Clicking element 'xpath=//*[@content-desc="Login button"]'.</msg>
-<msg timestamp="20230624 10:10:30.909" level="INFO">xpath criteria: //*[@content-desc="Login button"]</msg>
-<status status="PASS" starttime="20230624 10:10:30.840" endtime="20230624 10:10:30.909"/>
+<msg timestamp="20230625 18:36:43.579" level="INFO">Clicking element 'xpath=//*[@content-desc="Login button"]'.</msg>
+<msg timestamp="20230625 18:36:43.643" level="INFO">xpath criteria: //*[@content-desc="Login button"]</msg>
+<status status="PASS" starttime="20230625 18:36:43.577" endtime="20230625 18:36:43.644"/>
 </kw>
-<status status="PASS" starttime="20230624 10:10:30.184" endtime="20230624 10:10:30.909"/>
+<status status="PASS" starttime="20230625 18:36:42.907" endtime="20230625 18:36:43.644"/>
 </kw>
 <kw name="Then user should failed to login" library="LoginPage">
 <kw name="Wait Until Element Is Visible" library="AppiumLibrary">
 <arg>${textErrorOnLoginPage}</arg>
 <doc>Waits until element specified with `locator` is visible.</doc>
-<msg timestamp="20230624 10:10:31.553" level="INFO">xpath criteria: //*[@content-desc="generic-error-message"]</msg>
-<status status="PASS" starttime="20230624 10:10:30.910" endtime="20230624 10:10:31.553"/>
+<msg timestamp="20230625 18:36:44.328" level="INFO">xpath criteria: //*[@content-desc="generic-error-message"]</msg>
+<status status="PASS" starttime="20230625 18:36:43.644" endtime="20230625 18:36:44.329"/>
 </kw>
 <kw name="Element Should Be Visible" library="AppiumLibrary">
 <arg>${textErrorOnLoginPage}</arg>
 <doc>Verifies that element identified with locator is visible.</doc>
-<msg timestamp="20230624 10:10:31.617" level="INFO">xpath criteria: //*[@content-desc="generic-error-message"]</msg>
-<status status="PASS" starttime="20230624 10:10:31.554" endtime="20230624 10:10:31.618"/>
+<msg timestamp="20230625 18:36:44.387" level="INFO">xpath criteria: //*[@content-desc="generic-error-message"]</msg>
+<status status="PASS" starttime="20230625 18:36:44.329" endtime="20230625 18:36:44.387"/>
 </kw>
-<status status="PASS" starttime="20230624 10:10:30.910" endtime="20230624 10:10:31.618"/>
+<status status="PASS" starttime="20230625 18:36:43.644" endtime="20230625 18:36:44.387"/>
 </kw>
-<status status="PASS" starttime="20230624 10:10:18.929" endtime="20230624 10:10:31.618"/>
+<status status="PASS" starttime="20230625 18:36:30.916" endtime="20230625 18:36:44.387"/>
 </kw>
 <doc>this scenario to verify user can input latlong on login page</doc>
 <tag>credentials</tag>
@@ -337,7 +337,7 @@ xpath criteria: //*[@content-desc="Username input field"]</msg>
 <tag>login</tag>
 <tag>negative</tag>
 <tag>prod</tag>
-<status status="PASS" starttime="20230624 10:10:18.928" endtime="20230624 10:10:31.618"/>
+<status status="PASS" starttime="20230625 18:36:30.911" endtime="20230625 18:36:44.387"/>
 </test>
 <test id="s1-s1-t2" name="verify user can login with autofill credentials" line="14">
 <kw name="Success login with autofill credentials" library="LoginTest">
@@ -346,139 +346,139 @@ xpath criteria: //*[@content-desc="Username input field"]</msg>
 <kw name="Wait Until Element Is Visible" library="AppiumLibrary">
 <arg>${buttonMenu}</arg>
 <doc>Waits until element specified with `locator` is visible.</doc>
-<msg timestamp="20230624 10:10:31.693" level="INFO">xpath criteria: //*[@content-desc="open menu"]</msg>
-<status status="PASS" starttime="20230624 10:10:31.620" endtime="20230624 10:10:31.693"/>
+<msg timestamp="20230625 18:36:44.454" level="INFO">xpath criteria: //*[@content-desc="open menu"]</msg>
+<status status="PASS" starttime="20230625 18:36:44.389" endtime="20230625 18:36:44.454"/>
 </kw>
 <kw name="Click Element" library="AppiumLibrary">
 <arg>${buttonMenu}</arg>
 <doc>Click element identified by `locator`.</doc>
-<msg timestamp="20230624 10:10:31.695" level="INFO">Clicking element 'xpath=//*[@content-desc="open menu"]'.</msg>
-<msg timestamp="20230624 10:10:31.754" level="INFO">xpath criteria: //*[@content-desc="open menu"]</msg>
-<status status="PASS" starttime="20230624 10:10:31.694" endtime="20230624 10:10:31.754"/>
+<msg timestamp="20230625 18:36:44.456" level="INFO">Clicking element 'xpath=//*[@content-desc="open menu"]'.</msg>
+<msg timestamp="20230625 18:36:44.546" level="INFO">xpath criteria: //*[@content-desc="open menu"]</msg>
+<status status="PASS" starttime="20230625 18:36:44.454" endtime="20230625 18:36:44.546"/>
 </kw>
-<status status="PASS" starttime="20230624 10:10:31.620" endtime="20230624 10:10:31.754"/>
+<status status="PASS" starttime="20230625 18:36:44.389" endtime="20230625 18:36:44.546"/>
 </kw>
 <kw name="And user go to login page" library="ProductListPage">
 <kw name="Wait Until Element Is Visible" library="AppiumLibrary">
 <arg>${textLogin}</arg>
 <doc>Waits until element specified with `locator` is visible.</doc>
-<msg timestamp="20230624 10:10:33.288" level="INFO">xpath criteria: //*[@content-desc="menu item log in"]
+<msg timestamp="20230625 18:36:46.102" level="INFO">xpath criteria: //*[@content-desc="menu item log in"]
 xpath criteria: //*[@content-desc="menu item log in"]</msg>
-<status status="PASS" starttime="20230624 10:10:31.755" endtime="20230624 10:10:33.288"/>
+<status status="PASS" starttime="20230625 18:36:44.546" endtime="20230625 18:36:46.102"/>
 </kw>
 <kw name="Click Element" library="AppiumLibrary">
 <arg>${textLogin}</arg>
 <doc>Click element identified by `locator`.</doc>
-<msg timestamp="20230624 10:10:33.290" level="INFO">Clicking element 'xpath=//*[@content-desc="menu item log in"]'.</msg>
-<msg timestamp="20230624 10:10:33.366" level="INFO">xpath criteria: //*[@content-desc="menu item log in"]</msg>
-<status status="PASS" starttime="20230624 10:10:33.288" endtime="20230624 10:10:33.366"/>
+<msg timestamp="20230625 18:36:46.104" level="INFO">Clicking element 'xpath=//*[@content-desc="menu item log in"]'.</msg>
+<msg timestamp="20230625 18:36:46.185" level="INFO">xpath criteria: //*[@content-desc="menu item log in"]</msg>
+<status status="PASS" starttime="20230625 18:36:46.102" endtime="20230625 18:36:46.185"/>
 </kw>
-<status status="PASS" starttime="20230624 10:10:31.755" endtime="20230624 10:10:33.366"/>
+<status status="PASS" starttime="20230625 18:36:44.546" endtime="20230625 18:36:46.185"/>
 </kw>
 <kw name="Then user is on login page" library="LoginPage">
 <kw name="Wait Until Element Is Visible" library="AppiumLibrary">
 <arg>${inputUsernameOnLoginPage}</arg>
 <doc>Waits until element specified with `locator` is visible.</doc>
-<msg timestamp="20230624 10:10:34.863" level="INFO">xpath criteria: //*[@content-desc="Username input field"]</msg>
-<status status="PASS" starttime="20230624 10:10:33.367" endtime="20230624 10:10:34.863"/>
+<msg timestamp="20230625 18:36:47.671" level="INFO">xpath criteria: //*[@content-desc="Username input field"]</msg>
+<status status="PASS" starttime="20230625 18:36:46.185" endtime="20230625 18:36:47.671"/>
 </kw>
 <kw name="Element Should Be Visible" library="AppiumLibrary">
 <arg>${inputUsernameOnLoginPage}</arg>
 <doc>Verifies that element identified with locator is visible.</doc>
-<msg timestamp="20230624 10:10:34.922" level="INFO">xpath criteria: //*[@content-desc="Username input field"]</msg>
-<status status="PASS" starttime="20230624 10:10:34.864" endtime="20230624 10:10:34.922"/>
+<msg timestamp="20230625 18:36:47.726" level="INFO">xpath criteria: //*[@content-desc="Username input field"]</msg>
+<status status="PASS" starttime="20230625 18:36:47.671" endtime="20230625 18:36:47.726"/>
 </kw>
 <kw name="Element Should Be Visible" library="AppiumLibrary">
 <arg>${inputPasswordOnLoginPage}</arg>
 <doc>Verifies that element identified with locator is visible.</doc>
-<msg timestamp="20230624 10:10:34.969" level="INFO">xpath criteria: //*[@content-desc="Password input field"]</msg>
-<status status="PASS" starttime="20230624 10:10:34.922" endtime="20230624 10:10:34.969"/>
+<msg timestamp="20230625 18:36:47.857" level="INFO">xpath criteria: //*[@content-desc="Password input field"]</msg>
+<status status="PASS" starttime="20230625 18:36:47.727" endtime="20230625 18:36:47.857"/>
 </kw>
 <kw name="Element Should Be Visible" library="AppiumLibrary">
 <arg>${buttonLogin}</arg>
 <doc>Verifies that element identified with locator is visible.</doc>
-<msg timestamp="20230624 10:10:35.023" level="INFO">xpath criteria: //*[@content-desc="Login button"]</msg>
-<status status="PASS" starttime="20230624 10:10:34.969" endtime="20230624 10:10:35.023"/>
+<msg timestamp="20230625 18:36:47.917" level="INFO">xpath criteria: //*[@content-desc="Login button"]</msg>
+<status status="PASS" starttime="20230625 18:36:47.857" endtime="20230625 18:36:47.917"/>
 </kw>
-<status status="PASS" starttime="20230624 10:10:33.366" endtime="20230624 10:10:35.023"/>
+<status status="PASS" starttime="20230625 18:36:46.185" endtime="20230625 18:36:47.917"/>
 </kw>
-<status status="PASS" starttime="20230624 10:10:31.620" endtime="20230624 10:10:35.023"/>
+<status status="PASS" starttime="20230625 18:36:44.389" endtime="20230625 18:36:47.917"/>
 </kw>
 <kw name="When user input credentials with autofill" library="LoginPage">
 <kw name="Wait Until Element Is Visible" library="AppiumLibrary">
 <arg>${textValidAutofillCredentials}</arg>
 <doc>Waits until element specified with `locator` is visible.</doc>
-<msg timestamp="20230624 10:10:35.070" level="INFO">xpath criteria: //*[@content-desc="bob@example.com-autofill"]</msg>
-<status status="PASS" starttime="20230624 10:10:35.023" endtime="20230624 10:10:35.070"/>
+<msg timestamp="20230625 18:36:47.971" level="INFO">xpath criteria: //*[@content-desc="bob@example.com-autofill"]</msg>
+<status status="PASS" starttime="20230625 18:36:47.918" endtime="20230625 18:36:47.971"/>
 </kw>
 <kw name="Click Element" library="AppiumLibrary">
 <arg>${textValidAutofillCredentials}</arg>
 <doc>Click element identified by `locator`.</doc>
-<msg timestamp="20230624 10:10:35.072" level="INFO">Clicking element 'xpath=//*[@content-desc="bob@example.com-autofill"]'.</msg>
-<msg timestamp="20230624 10:10:35.139" level="INFO">xpath criteria: //*[@content-desc="bob@example.com-autofill"]</msg>
-<status status="PASS" starttime="20230624 10:10:35.070" endtime="20230624 10:10:35.139"/>
+<msg timestamp="20230625 18:36:47.973" level="INFO">Clicking element 'xpath=//*[@content-desc="bob@example.com-autofill"]'.</msg>
+<msg timestamp="20230625 18:36:48.062" level="INFO">xpath criteria: //*[@content-desc="bob@example.com-autofill"]</msg>
+<status status="PASS" starttime="20230625 18:36:47.971" endtime="20230625 18:36:48.062"/>
 </kw>
-<status status="PASS" starttime="20230624 10:10:35.023" endtime="20230624 10:10:35.139"/>
+<status status="PASS" starttime="20230625 18:36:47.917" endtime="20230625 18:36:48.062"/>
 </kw>
 <kw name="And user click button login on login page" library="LoginPage">
 <kw name="Wait Until Element Is Visible" library="AppiumLibrary">
 <arg>${buttonLogin}</arg>
 <doc>Waits until element specified with `locator` is visible.</doc>
-<msg timestamp="20230624 10:10:35.798" level="INFO">xpath criteria: //*[@content-desc="Login button"]</msg>
-<status status="PASS" starttime="20230624 10:10:35.140" endtime="20230624 10:10:35.798"/>
+<msg timestamp="20230625 18:36:48.709" level="INFO">xpath criteria: //*[@content-desc="Login button"]</msg>
+<status status="PASS" starttime="20230625 18:36:48.062" endtime="20230625 18:36:48.710"/>
 </kw>
 <kw name="Click Element" library="AppiumLibrary">
 <arg>${buttonLogin}</arg>
 <doc>Click element identified by `locator`.</doc>
-<msg timestamp="20230624 10:10:35.801" level="INFO">Clicking element 'xpath=//*[@content-desc="Login button"]'.</msg>
-<msg timestamp="20230624 10:10:35.867" level="INFO">xpath criteria: //*[@content-desc="Login button"]</msg>
-<status status="PASS" starttime="20230624 10:10:35.799" endtime="20230624 10:10:35.867"/>
+<msg timestamp="20230625 18:36:48.713" level="INFO">Clicking element 'xpath=//*[@content-desc="Login button"]'.</msg>
+<msg timestamp="20230625 18:36:48.779" level="INFO">xpath criteria: //*[@content-desc="Login button"]</msg>
+<status status="PASS" starttime="20230625 18:36:48.710" endtime="20230625 18:36:48.779"/>
 </kw>
-<status status="PASS" starttime="20230624 10:10:35.140" endtime="20230624 10:10:35.867"/>
+<status status="PASS" starttime="20230625 18:36:48.062" endtime="20230625 18:36:48.779"/>
 </kw>
 <kw name="Then user success to login" library="LoginPage">
 <kw name="Wait Until Page Does Not Contain" library="AppiumLibrary">
 <arg>${buttonLogin}</arg>
 <doc>Waits until `text` disappears from current page.</doc>
-<status status="PASS" starttime="20230624 10:10:35.867" endtime="20230624 10:10:36.147"/>
+<status status="PASS" starttime="20230625 18:36:48.779" endtime="20230625 18:36:49.066"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>3</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20230624 10:10:39.150" level="INFO">Slept 3 seconds</msg>
-<status status="PASS" starttime="20230624 10:10:36.147" endtime="20230624 10:10:39.151"/>
+<msg timestamp="20230625 18:36:52.077" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20230625 18:36:49.066" endtime="20230625 18:36:52.077"/>
 </kw>
 <kw name="Page Should Not Contain Element" library="AppiumLibrary">
 <arg>${buttonLogin}</arg>
 <doc>Verifies that current page not contains `locator` element.</doc>
-<msg timestamp="20230624 10:10:39.236" level="INFO">Current page not contains element 'xpath=//*[@content-desc="Login button"]'.</msg>
-<msg timestamp="20230624 10:10:39.236" level="INFO">xpath criteria: //*[@content-desc="Login button"]</msg>
-<status status="PASS" starttime="20230624 10:10:39.151" endtime="20230624 10:10:39.236"/>
+<msg timestamp="20230625 18:36:52.148" level="INFO">Current page not contains element 'xpath=//*[@content-desc="Login button"]'.</msg>
+<msg timestamp="20230625 18:36:52.148" level="INFO">xpath criteria: //*[@content-desc="Login button"]</msg>
+<status status="PASS" starttime="20230625 18:36:52.078" endtime="20230625 18:36:52.148"/>
 </kw>
-<status status="PASS" starttime="20230624 10:10:35.867" endtime="20230624 10:10:39.236"/>
+<status status="PASS" starttime="20230625 18:36:48.779" endtime="20230625 18:36:52.148"/>
 </kw>
-<status status="PASS" starttime="20230624 10:10:31.619" endtime="20230624 10:10:39.236"/>
+<status status="PASS" starttime="20230625 18:36:44.388" endtime="20230625 18:36:52.148"/>
 </kw>
 <doc>this scenario to verify user can login with autofill credentials</doc>
 <tag>credentials</tag>
 <tag>login</tag>
 <tag>positive</tag>
 <tag>prod</tag>
-<status status="PASS" starttime="20230624 10:10:31.618" endtime="20230624 10:10:39.236"/>
+<status status="PASS" starttime="20230625 18:36:44.388" endtime="20230625 18:36:52.148"/>
 </test>
 <kw name="After Suite" library="prod" type="TEARDOWN">
 <kw name="Remove Application" library="AppiumLibrary">
 <arg>${APP PACKAGE}</arg>
 <doc>Removes the application that is identified with an application id</doc>
-<status status="PASS" starttime="20230624 10:10:39.237" endtime="20230624 10:10:39.869"/>
+<status status="PASS" starttime="20230625 18:36:52.149" endtime="20230625 18:36:52.782"/>
 </kw>
 <kw name="Close Application" library="AppiumLibrary">
 <doc>Closes the current application and also close webdriver session.</doc>
-<status status="PASS" starttime="20230624 10:10:39.869" endtime="20230624 10:10:40.349"/>
+<status status="PASS" starttime="20230625 18:36:52.782" endtime="20230625 18:36:53.308"/>
 </kw>
-<status status="PASS" starttime="20230624 10:10:39.237" endtime="20230624 10:10:40.350"/>
+<status status="PASS" starttime="20230625 18:36:52.149" endtime="20230625 18:36:53.308"/>
 </kw>
-<status status="PASS" starttime="20230624 10:10:07.078" endtime="20230624 10:10:40.350"/>
+<status status="PASS" starttime="20230625 18:36:20.654" endtime="20230625 18:36:53.308"/>
 </suite>
 <suite id="s1-s2" name="OrderSuite" source="/Users/mbp2020/Documents/sequis-app/TestSuite/OrderSuite.robot">
 <kw name="Start Application on Local" library="prod" type="SETUP">
@@ -486,8 +486,8 @@ xpath criteria: //*[@content-desc="menu item log in"]</msg>
 <var>${true}</var>
 <arg>true</arg>
 <doc>Converts the given item to Boolean true or false.</doc>
-<msg timestamp="20230624 10:10:40.428" level="INFO">${true} = True</msg>
-<status status="PASS" starttime="20230624 10:10:40.428" endtime="20230624 10:10:40.428"/>
+<msg timestamp="20230625 18:36:53.368" level="INFO">${true} = True</msg>
+<status status="PASS" starttime="20230625 18:36:53.367" endtime="20230625 18:36:53.368"/>
 </kw>
 <kw name="Open Application" library="AppiumLibrary">
 <arg>http://127.0.0.1:4723/wd/hub</arg>
@@ -513,9 +513,9 @@ Please check https://github.com/appium/appium/blob/master/docs/en/writing-runnin
 | remote_url          | Yes    | Appium server url |
 | alias               | no     | alias             |
 | strict_ssl          | No     | allows you to send commands to an invalid certificate host like a self-signed one. |</doc>
-<status status="PASS" starttime="20230624 10:10:40.429" endtime="20230624 10:10:54.430"/>
+<status status="PASS" starttime="20230625 18:36:53.368" endtime="20230625 18:37:03.380"/>
 </kw>
-<status status="PASS" starttime="20230624 10:10:40.427" endtime="20230624 10:10:54.430"/>
+<status status="PASS" starttime="20230625 18:36:53.367" endtime="20230625 18:37:03.380"/>
 </kw>
 <test id="s1-s2-t1" name="verify user can create order" line="8">
 <kw name="Create order" library="OrderTest">
@@ -526,383 +526,384 @@ Please check https://github.com/appium/appium/blob/master/docs/en/writing-runnin
 <kw name="Wait Until Element Is Visible" library="AppiumLibrary">
 <arg>${buttonMenu}</arg>
 <doc>Waits until element specified with `locator` is visible.</doc>
-<msg timestamp="20230624 10:10:55.824" level="INFO">xpath criteria: //*[@content-desc="open menu"]</msg>
-<status status="PASS" starttime="20230624 10:10:54.434" endtime="20230624 10:10:55.825"/>
+<msg timestamp="20230625 18:37:04.820" level="INFO">xpath criteria: //*[@content-desc="open menu"]</msg>
+<status status="PASS" starttime="20230625 18:37:03.389" endtime="20230625 18:37:04.820"/>
 </kw>
 <kw name="Click Element" library="AppiumLibrary">
 <arg>${buttonMenu}</arg>
 <doc>Click element identified by `locator`.</doc>
-<msg timestamp="20230624 10:10:55.828" level="INFO">Clicking element 'xpath=//*[@content-desc="open menu"]'.</msg>
-<msg timestamp="20230624 10:10:56.177" level="INFO">xpath criteria: //*[@content-desc="open menu"]</msg>
-<status status="PASS" starttime="20230624 10:10:55.825" endtime="20230624 10:10:56.177"/>
+<msg timestamp="20230625 18:37:04.823" level="INFO">Clicking element 'xpath=//*[@content-desc="open menu"]'.</msg>
+<msg timestamp="20230625 18:37:05.034" level="INFO">xpath criteria: //*[@content-desc="open menu"]</msg>
+<status status="PASS" starttime="20230625 18:37:04.820" endtime="20230625 18:37:05.034"/>
 </kw>
-<status status="PASS" starttime="20230624 10:10:54.433" endtime="20230624 10:10:56.177"/>
+<status status="PASS" starttime="20230625 18:37:03.388" endtime="20230625 18:37:05.034"/>
 </kw>
 <kw name="And user go to login page" library="ProductListPage">
 <kw name="Wait Until Element Is Visible" library="AppiumLibrary">
 <arg>${textLogin}</arg>
 <doc>Waits until element specified with `locator` is visible.</doc>
-<msg timestamp="20230624 10:10:57.677" level="INFO">xpath criteria: //*[@content-desc="menu item log in"]</msg>
-<status status="PASS" starttime="20230624 10:10:56.178" endtime="20230624 10:10:57.677"/>
+<msg timestamp="20230625 18:37:06.755" level="INFO">xpath criteria: //*[@content-desc="menu item log in"]
+xpath criteria: //*[@content-desc="menu item log in"]</msg>
+<status status="PASS" starttime="20230625 18:37:05.034" endtime="20230625 18:37:06.755"/>
 </kw>
 <kw name="Click Element" library="AppiumLibrary">
 <arg>${textLogin}</arg>
 <doc>Click element identified by `locator`.</doc>
-<msg timestamp="20230624 10:10:57.681" level="INFO">Clicking element 'xpath=//*[@content-desc="menu item log in"]'.</msg>
-<msg timestamp="20230624 10:10:57.902" level="INFO">xpath criteria: //*[@content-desc="menu item log in"]</msg>
-<status status="PASS" starttime="20230624 10:10:57.677" endtime="20230624 10:10:57.902"/>
+<msg timestamp="20230625 18:37:06.758" level="INFO">Clicking element 'xpath=//*[@content-desc="menu item log in"]'.</msg>
+<msg timestamp="20230625 18:37:06.929" level="INFO">xpath criteria: //*[@content-desc="menu item log in"]</msg>
+<status status="PASS" starttime="20230625 18:37:06.755" endtime="20230625 18:37:06.930"/>
 </kw>
-<status status="PASS" starttime="20230624 10:10:56.177" endtime="20230624 10:10:57.902"/>
+<status status="PASS" starttime="20230625 18:37:05.034" endtime="20230625 18:37:06.930"/>
 </kw>
 <kw name="Then user is on login page" library="LoginPage">
 <kw name="Wait Until Element Is Visible" library="AppiumLibrary">
 <arg>${inputUsernameOnLoginPage}</arg>
 <doc>Waits until element specified with `locator` is visible.</doc>
-<msg timestamp="20230624 10:10:59.559" level="INFO">xpath criteria: //*[@content-desc="Username input field"]
+<msg timestamp="20230625 18:37:08.553" level="INFO">xpath criteria: //*[@content-desc="Username input field"]
 xpath criteria: //*[@content-desc="Username input field"]</msg>
-<status status="PASS" starttime="20230624 10:10:57.903" endtime="20230624 10:10:59.560"/>
+<status status="PASS" starttime="20230625 18:37:06.930" endtime="20230625 18:37:08.554"/>
 </kw>
 <kw name="Element Should Be Visible" library="AppiumLibrary">
 <arg>${inputUsernameOnLoginPage}</arg>
 <doc>Verifies that element identified with locator is visible.</doc>
-<msg timestamp="20230624 10:10:59.907" level="INFO">xpath criteria: //*[@content-desc="Username input field"]</msg>
-<status status="PASS" starttime="20230624 10:10:59.560" endtime="20230624 10:10:59.908"/>
+<msg timestamp="20230625 18:37:08.672" level="INFO">xpath criteria: //*[@content-desc="Username input field"]</msg>
+<status status="PASS" starttime="20230625 18:37:08.554" endtime="20230625 18:37:08.672"/>
 </kw>
 <kw name="Element Should Be Visible" library="AppiumLibrary">
 <arg>${inputPasswordOnLoginPage}</arg>
 <doc>Verifies that element identified with locator is visible.</doc>
-<msg timestamp="20230624 10:11:00.010" level="INFO">xpath criteria: //*[@content-desc="Password input field"]</msg>
-<status status="PASS" starttime="20230624 10:10:59.908" endtime="20230624 10:11:00.010"/>
+<msg timestamp="20230625 18:37:08.972" level="INFO">xpath criteria: //*[@content-desc="Password input field"]</msg>
+<status status="PASS" starttime="20230625 18:37:08.672" endtime="20230625 18:37:08.972"/>
 </kw>
 <kw name="Element Should Be Visible" library="AppiumLibrary">
 <arg>${buttonLogin}</arg>
 <doc>Verifies that element identified with locator is visible.</doc>
-<msg timestamp="20230624 10:11:00.128" level="INFO">xpath criteria: //*[@content-desc="Login button"]</msg>
-<status status="PASS" starttime="20230624 10:11:00.010" endtime="20230624 10:11:00.128"/>
+<msg timestamp="20230625 18:37:09.052" level="INFO">xpath criteria: //*[@content-desc="Login button"]</msg>
+<status status="PASS" starttime="20230625 18:37:08.972" endtime="20230625 18:37:09.052"/>
 </kw>
-<status status="PASS" starttime="20230624 10:10:57.902" endtime="20230624 10:11:00.128"/>
+<status status="PASS" starttime="20230625 18:37:06.930" endtime="20230625 18:37:09.052"/>
 </kw>
-<status status="PASS" starttime="20230624 10:10:54.432" endtime="20230624 10:11:00.128"/>
+<status status="PASS" starttime="20230625 18:37:03.386" endtime="20230625 18:37:09.052"/>
 </kw>
 <kw name="When user input credentials with autofill" library="LoginPage">
 <kw name="Wait Until Element Is Visible" library="AppiumLibrary">
 <arg>${textValidAutofillCredentials}</arg>
 <doc>Waits until element specified with `locator` is visible.</doc>
-<msg timestamp="20230624 10:11:00.217" level="INFO">xpath criteria: //*[@content-desc="bob@example.com-autofill"]</msg>
-<status status="PASS" starttime="20230624 10:11:00.129" endtime="20230624 10:11:00.218"/>
+<msg timestamp="20230625 18:37:09.130" level="INFO">xpath criteria: //*[@content-desc="bob@example.com-autofill"]</msg>
+<status status="PASS" starttime="20230625 18:37:09.052" endtime="20230625 18:37:09.130"/>
 </kw>
 <kw name="Click Element" library="AppiumLibrary">
 <arg>${textValidAutofillCredentials}</arg>
 <doc>Click element identified by `locator`.</doc>
-<msg timestamp="20230624 10:11:00.220" level="INFO">Clicking element 'xpath=//*[@content-desc="bob@example.com-autofill"]'.</msg>
-<msg timestamp="20230624 10:11:00.788" level="INFO">xpath criteria: //*[@content-desc="bob@example.com-autofill"]</msg>
-<status status="PASS" starttime="20230624 10:11:00.218" endtime="20230624 10:11:00.788"/>
+<msg timestamp="20230625 18:37:09.133" level="INFO">Clicking element 'xpath=//*[@content-desc="bob@example.com-autofill"]'.</msg>
+<msg timestamp="20230625 18:37:09.209" level="INFO">xpath criteria: //*[@content-desc="bob@example.com-autofill"]</msg>
+<status status="PASS" starttime="20230625 18:37:09.130" endtime="20230625 18:37:09.209"/>
 </kw>
-<status status="PASS" starttime="20230624 10:11:00.128" endtime="20230624 10:11:00.788"/>
+<status status="PASS" starttime="20230625 18:37:09.052" endtime="20230625 18:37:09.209"/>
 </kw>
 <kw name="And user click button login on login page" library="LoginPage">
 <kw name="Wait Until Element Is Visible" library="AppiumLibrary">
 <arg>${buttonLogin}</arg>
 <doc>Waits until element specified with `locator` is visible.</doc>
-<msg timestamp="20230624 10:11:01.450" level="INFO">xpath criteria: //*[@content-desc="Login button"]</msg>
-<status status="PASS" starttime="20230624 10:11:00.789" endtime="20230624 10:11:01.450"/>
+<msg timestamp="20230625 18:37:09.877" level="INFO">xpath criteria: //*[@content-desc="Login button"]</msg>
+<status status="PASS" starttime="20230625 18:37:09.210" endtime="20230625 18:37:09.877"/>
 </kw>
 <kw name="Click Element" library="AppiumLibrary">
 <arg>${buttonLogin}</arg>
 <doc>Click element identified by `locator`.</doc>
-<msg timestamp="20230624 10:11:01.454" level="INFO">Clicking element 'xpath=//*[@content-desc="Login button"]'.</msg>
-<msg timestamp="20230624 10:11:01.529" level="INFO">xpath criteria: //*[@content-desc="Login button"]</msg>
-<status status="PASS" starttime="20230624 10:11:01.450" endtime="20230624 10:11:01.530"/>
+<msg timestamp="20230625 18:37:09.880" level="INFO">Clicking element 'xpath=//*[@content-desc="Login button"]'.</msg>
+<msg timestamp="20230625 18:37:10.310" level="INFO">xpath criteria: //*[@content-desc="Login button"]</msg>
+<status status="PASS" starttime="20230625 18:37:09.878" endtime="20230625 18:37:10.310"/>
 </kw>
-<status status="PASS" starttime="20230624 10:11:00.788" endtime="20230624 10:11:01.530"/>
+<status status="PASS" starttime="20230625 18:37:09.209" endtime="20230625 18:37:10.310"/>
 </kw>
 <kw name="Then user success to login" library="LoginPage">
 <kw name="Wait Until Page Does Not Contain" library="AppiumLibrary">
 <arg>${buttonLogin}</arg>
 <doc>Waits until `text` disappears from current page.</doc>
-<status status="PASS" starttime="20230624 10:11:01.530" endtime="20230624 10:11:01.824"/>
+<status status="PASS" starttime="20230625 18:37:10.311" endtime="20230625 18:37:11.722"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>3</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20230624 10:11:04.828" level="INFO">Slept 3 seconds</msg>
-<status status="PASS" starttime="20230624 10:11:01.824" endtime="20230624 10:11:04.829"/>
+<msg timestamp="20230625 18:37:14.723" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20230625 18:37:11.722" endtime="20230625 18:37:14.724"/>
 </kw>
 <kw name="Page Should Not Contain Element" library="AppiumLibrary">
 <arg>${buttonLogin}</arg>
 <doc>Verifies that current page not contains `locator` element.</doc>
-<msg timestamp="20230624 10:11:04.918" level="INFO">Current page not contains element 'xpath=//*[@content-desc="Login button"]'.</msg>
-<msg timestamp="20230624 10:11:04.918" level="INFO">xpath criteria: //*[@content-desc="Login button"]</msg>
-<status status="PASS" starttime="20230624 10:11:04.829" endtime="20230624 10:11:04.919"/>
+<msg timestamp="20230625 18:37:14.848" level="INFO">Current page not contains element 'xpath=//*[@content-desc="Login button"]'.</msg>
+<msg timestamp="20230625 18:37:14.848" level="INFO">xpath criteria: //*[@content-desc="Login button"]</msg>
+<status status="PASS" starttime="20230625 18:37:14.724" endtime="20230625 18:37:14.848"/>
 </kw>
-<status status="PASS" starttime="20230624 10:11:01.530" endtime="20230624 10:11:04.919"/>
+<status status="PASS" starttime="20230625 18:37:10.311" endtime="20230625 18:37:14.848"/>
 </kw>
-<status status="PASS" starttime="20230624 10:10:54.432" endtime="20230624 10:11:04.919"/>
+<status status="PASS" starttime="20230625 18:37:03.385" endtime="20230625 18:37:14.848"/>
 </kw>
 <kw name="When user go to product detail page" library="ProductListPage">
 <kw name="Wait Until Element Is Visible" library="AppiumLibrary">
 <arg>${imageProduct}</arg>
 <doc>Waits until element specified with `locator` is visible.</doc>
-<msg timestamp="20230624 10:11:05.018" level="INFO">xpath criteria: (//*[@content-desc='products screen']//*[@content-desc='store item'])[1]</msg>
-<status status="PASS" starttime="20230624 10:11:04.919" endtime="20230624 10:11:05.018"/>
+<msg timestamp="20230625 18:37:14.953" level="INFO">xpath criteria: (//*[@content-desc='products screen']//*[@content-desc='store item'])[1]</msg>
+<status status="PASS" starttime="20230625 18:37:14.849" endtime="20230625 18:37:14.953"/>
 </kw>
 <kw name="Click Element" library="AppiumLibrary">
 <arg>${imageProduct}</arg>
 <doc>Click element identified by `locator`.</doc>
-<msg timestamp="20230624 10:11:05.021" level="INFO">Clicking element 'xpath=(//*[@content-desc='products screen']//*[@content-desc='store item'])[1]'.</msg>
-<msg timestamp="20230624 10:11:05.141" level="INFO">xpath criteria: (//*[@content-desc='products screen']//*[@content-desc='store item'])[1]</msg>
-<status status="PASS" starttime="20230624 10:11:05.018" endtime="20230624 10:11:05.141"/>
+<msg timestamp="20230625 18:37:14.955" level="INFO">Clicking element 'xpath=(//*[@content-desc='products screen']//*[@content-desc='store item'])[1]'.</msg>
+<msg timestamp="20230625 18:37:15.082" level="INFO">xpath criteria: (//*[@content-desc='products screen']//*[@content-desc='store item'])[1]</msg>
+<status status="PASS" starttime="20230625 18:37:14.953" endtime="20230625 18:37:15.083"/>
 </kw>
-<status status="PASS" starttime="20230624 10:11:04.919" endtime="20230624 10:11:05.141"/>
+<status status="PASS" starttime="20230625 18:37:14.848" endtime="20230625 18:37:15.083"/>
 </kw>
 <kw name="And user add product to cart" library="ProductDetailPage">
 <kw name="Wait Until Element Is Visible" library="AppiumLibrary">
 <arg>${buttonAddToCart}</arg>
 <doc>Waits until element specified with `locator` is visible.</doc>
-<msg timestamp="20230624 10:11:06.323" level="INFO">xpath criteria: //*[@content-desc="Add To Cart button"]
+<msg timestamp="20230625 18:37:16.281" level="INFO">xpath criteria: //*[@content-desc="Add To Cart button"]
 xpath criteria: //*[@content-desc="Add To Cart button"]</msg>
-<status status="PASS" starttime="20230624 10:11:05.142" endtime="20230624 10:11:06.323"/>
+<status status="PASS" starttime="20230625 18:37:15.083" endtime="20230625 18:37:16.281"/>
 </kw>
 <kw name="Click Element" library="AppiumLibrary">
 <arg>${buttonAddToCart}</arg>
 <doc>Click element identified by `locator`.</doc>
-<msg timestamp="20230624 10:11:06.325" level="INFO">Clicking element 'xpath=//*[@content-desc="Add To Cart button"]'.</msg>
-<msg timestamp="20230624 10:11:06.403" level="INFO">xpath criteria: //*[@content-desc="Add To Cart button"]</msg>
-<status status="PASS" starttime="20230624 10:11:06.323" endtime="20230624 10:11:06.404"/>
+<msg timestamp="20230625 18:37:16.284" level="INFO">Clicking element 'xpath=//*[@content-desc="Add To Cart button"]'.</msg>
+<msg timestamp="20230625 18:37:16.383" level="INFO">xpath criteria: //*[@content-desc="Add To Cart button"]</msg>
+<status status="PASS" starttime="20230625 18:37:16.282" endtime="20230625 18:37:16.383"/>
 </kw>
-<status status="PASS" starttime="20230624 10:11:05.141" endtime="20230624 10:11:06.404"/>
+<status status="PASS" starttime="20230625 18:37:15.083" endtime="20230625 18:37:16.383"/>
 </kw>
 <kw name="And user go to cart page" library="ProductDetailPage">
 <kw name="Wait Until Element Is Visible" library="AppiumLibrary">
 <arg>${iconCart}</arg>
 <doc>Waits until element specified with `locator` is visible.</doc>
-<msg timestamp="20230624 10:11:06.511" level="INFO">xpath criteria: //*[@content-desc="cart badge"]</msg>
-<status status="PASS" starttime="20230624 10:11:06.404" endtime="20230624 10:11:06.511"/>
+<msg timestamp="20230625 18:37:16.490" level="INFO">xpath criteria: //*[@content-desc="cart badge"]</msg>
+<status status="PASS" starttime="20230625 18:37:16.384" endtime="20230625 18:37:16.491"/>
 </kw>
 <kw name="Click Element" library="AppiumLibrary">
 <arg>${iconCart}</arg>
 <doc>Click element identified by `locator`.</doc>
-<msg timestamp="20230624 10:11:06.515" level="INFO">Clicking element 'xpath=//*[@content-desc="cart badge"]'.</msg>
-<msg timestamp="20230624 10:11:07.193" level="INFO">xpath criteria: //*[@content-desc="cart badge"]</msg>
-<status status="PASS" starttime="20230624 10:11:06.511" endtime="20230624 10:11:07.194"/>
+<msg timestamp="20230625 18:37:16.493" level="INFO">Clicking element 'xpath=//*[@content-desc="cart badge"]'.</msg>
+<msg timestamp="20230625 18:37:17.157" level="INFO">xpath criteria: //*[@content-desc="cart badge"]</msg>
+<status status="PASS" starttime="20230625 18:37:16.491" endtime="20230625 18:37:17.157"/>
 </kw>
-<status status="PASS" starttime="20230624 10:11:06.404" endtime="20230624 10:11:07.194"/>
+<status status="PASS" starttime="20230625 18:37:16.383" endtime="20230625 18:37:17.157"/>
 </kw>
 <kw name="Then user is on cart page" library="CartPage">
 <kw name="Wait Until Element Is Visible" library="AppiumLibrary">
 <arg>${textProductNameOnCart}</arg>
 <doc>Waits until element specified with `locator` is visible.</doc>
-<msg timestamp="20230624 10:11:07.927" level="INFO">xpath criteria: //*[@content-desc="product label"]
+<msg timestamp="20230625 18:37:17.871" level="INFO">xpath criteria: //*[@content-desc="product label"]
 xpath criteria: //*[@content-desc="product label"]</msg>
-<status status="PASS" starttime="20230624 10:11:07.195" endtime="20230624 10:11:07.927"/>
+<status status="PASS" starttime="20230625 18:37:17.157" endtime="20230625 18:37:17.871"/>
 </kw>
 <kw name="Element Should Be Visible" library="AppiumLibrary">
 <arg>${textProductNameOnCart}</arg>
 <doc>Verifies that element identified with locator is visible.</doc>
-<msg timestamp="20230624 10:11:07.989" level="INFO">xpath criteria: //*[@content-desc="product label"]</msg>
-<status status="PASS" starttime="20230624 10:11:07.927" endtime="20230624 10:11:07.989"/>
+<msg timestamp="20230625 18:37:17.953" level="INFO">xpath criteria: //*[@content-desc="product label"]</msg>
+<status status="PASS" starttime="20230625 18:37:17.871" endtime="20230625 18:37:17.953"/>
 </kw>
 <kw name="Element Should Be Visible" library="AppiumLibrary">
 <arg>${textProductPriceOnCart}</arg>
 <doc>Verifies that element identified with locator is visible.</doc>
-<msg timestamp="20230624 10:11:08.054" level="INFO">xpath criteria: //*[@content-desc="product price"]</msg>
-<status status="PASS" starttime="20230624 10:11:07.989" endtime="20230624 10:11:08.054"/>
+<msg timestamp="20230625 18:37:18.022" level="INFO">xpath criteria: //*[@content-desc="product price"]</msg>
+<status status="PASS" starttime="20230625 18:37:17.954" endtime="20230625 18:37:18.022"/>
 </kw>
 <kw name="Element Should Be Visible" library="AppiumLibrary">
 <arg>${textTotalPriceOnCart}</arg>
 <doc>Verifies that element identified with locator is visible.</doc>
-<msg timestamp="20230624 10:11:08.123" level="INFO">xpath criteria: //*[@content-desc="total price"]</msg>
-<status status="PASS" starttime="20230624 10:11:08.055" endtime="20230624 10:11:08.123"/>
+<msg timestamp="20230625 18:37:18.084" level="INFO">xpath criteria: //*[@content-desc="total price"]</msg>
+<status status="PASS" starttime="20230625 18:37:18.022" endtime="20230625 18:37:18.084"/>
 </kw>
 <kw name="Element Should Be Visible" library="AppiumLibrary">
 <arg>${buttonCheckout}</arg>
 <doc>Verifies that element identified with locator is visible.</doc>
-<msg timestamp="20230624 10:11:08.189" level="INFO">xpath criteria: //*[@content-desc="Proceed To Checkout button"]</msg>
-<status status="PASS" starttime="20230624 10:11:08.124" endtime="20230624 10:11:08.189"/>
+<msg timestamp="20230625 18:37:18.152" level="INFO">xpath criteria: //*[@content-desc="Proceed To Checkout button"]</msg>
+<status status="PASS" starttime="20230625 18:37:18.084" endtime="20230625 18:37:18.152"/>
 </kw>
-<status status="PASS" starttime="20230624 10:11:07.194" endtime="20230624 10:11:08.189"/>
+<status status="PASS" starttime="20230625 18:37:17.157" endtime="20230625 18:37:18.152"/>
 </kw>
-<status status="PASS" starttime="20230624 10:10:54.431" endtime="20230624 10:11:08.190"/>
+<status status="PASS" starttime="20230625 18:37:03.384" endtime="20230625 18:37:18.153"/>
 </kw>
 <kw name="When user go to checkout page" library="CartPage">
 <kw name="Wait Until Element Is Visible" library="AppiumLibrary">
 <arg>${buttonCheckout}</arg>
 <doc>Waits until element specified with `locator` is visible.</doc>
-<msg timestamp="20230624 10:11:08.263" level="INFO">xpath criteria: //*[@content-desc="Proceed To Checkout button"]</msg>
-<status status="PASS" starttime="20230624 10:11:08.190" endtime="20230624 10:11:08.263"/>
+<msg timestamp="20230625 18:37:18.242" level="INFO">xpath criteria: //*[@content-desc="Proceed To Checkout button"]</msg>
+<status status="PASS" starttime="20230625 18:37:18.153" endtime="20230625 18:37:18.242"/>
 </kw>
 <kw name="Click Element" library="AppiumLibrary">
 <arg>${buttonCheckout}</arg>
 <doc>Click element identified by `locator`.</doc>
-<msg timestamp="20230624 10:11:08.266" level="INFO">Clicking element 'xpath=//*[@content-desc="Proceed To Checkout button"]'.</msg>
-<msg timestamp="20230624 10:11:08.355" level="INFO">xpath criteria: //*[@content-desc="Proceed To Checkout button"]</msg>
-<status status="PASS" starttime="20230624 10:11:08.263" endtime="20230624 10:11:08.355"/>
+<msg timestamp="20230625 18:37:18.244" level="INFO">Clicking element 'xpath=//*[@content-desc="Proceed To Checkout button"]'.</msg>
+<msg timestamp="20230625 18:37:18.326" level="INFO">xpath criteria: //*[@content-desc="Proceed To Checkout button"]</msg>
+<status status="PASS" starttime="20230625 18:37:18.242" endtime="20230625 18:37:18.326"/>
 </kw>
-<status status="PASS" starttime="20230624 10:11:08.190" endtime="20230624 10:11:08.355"/>
+<status status="PASS" starttime="20230625 18:37:18.153" endtime="20230625 18:37:18.326"/>
 </kw>
 <kw name="Then user is on checkout page" library="CheckoutPage">
 <kw name="Wait Until Element Is Visible" library="AppiumLibrary">
 <arg>${inputNameOnCheckoutPage}</arg>
 <doc>Waits until element specified with `locator` is visible.</doc>
-<msg timestamp="20230624 10:11:09.544" level="INFO">xpath criteria: //*[@content-desc="Full Name* input field"]
+<msg timestamp="20230625 18:37:19.586" level="INFO">xpath criteria: //*[@content-desc="Full Name* input field"]
 xpath criteria: //*[@content-desc="Full Name* input field"]</msg>
-<status status="PASS" starttime="20230624 10:11:08.356" endtime="20230624 10:11:09.544"/>
+<status status="PASS" starttime="20230625 18:37:18.327" endtime="20230625 18:37:19.586"/>
 </kw>
 <kw name="Element Should Be Visible" library="AppiumLibrary">
 <arg>${inputNameOnCheckoutPage}</arg>
 <doc>Verifies that element identified with locator is visible.</doc>
-<msg timestamp="20230624 10:11:09.610" level="INFO">xpath criteria: //*[@content-desc="Full Name* input field"]</msg>
-<status status="PASS" starttime="20230624 10:11:09.544" endtime="20230624 10:11:09.610"/>
+<msg timestamp="20230625 18:37:19.653" level="INFO">xpath criteria: //*[@content-desc="Full Name* input field"]</msg>
+<status status="PASS" starttime="20230625 18:37:19.586" endtime="20230625 18:37:19.653"/>
 </kw>
 <kw name="Element Should Be Visible" library="AppiumLibrary">
 <arg>${inputAddressLine1}</arg>
 <doc>Verifies that element identified with locator is visible.</doc>
-<msg timestamp="20230624 10:11:09.670" level="INFO">xpath criteria: //*[@content-desc="Address Line 1* input field"]</msg>
-<status status="PASS" starttime="20230624 10:11:09.610" endtime="20230624 10:11:09.670"/>
+<msg timestamp="20230625 18:37:19.726" level="INFO">xpath criteria: //*[@content-desc="Address Line 1* input field"]</msg>
+<status status="PASS" starttime="20230625 18:37:19.653" endtime="20230625 18:37:19.726"/>
 </kw>
 <kw name="Element Should Be Visible" library="AppiumLibrary">
 <arg>${inputCity}</arg>
 <doc>Verifies that element identified with locator is visible.</doc>
-<msg timestamp="20230624 10:11:09.755" level="INFO">xpath criteria: //*[@content-desc="City* input field"]</msg>
-<status status="PASS" starttime="20230624 10:11:09.670" endtime="20230624 10:11:09.755"/>
+<msg timestamp="20230625 18:37:19.801" level="INFO">xpath criteria: //*[@content-desc="City* input field"]</msg>
+<status status="PASS" starttime="20230625 18:37:19.727" endtime="20230625 18:37:19.801"/>
 </kw>
 <kw name="Element Should Be Visible" library="AppiumLibrary">
 <arg>${buttonGoToPayment}</arg>
 <doc>Verifies that element identified with locator is visible.</doc>
-<msg timestamp="20230624 10:11:09.823" level="INFO">xpath criteria: //*[@content-desc="To Payment button"]</msg>
-<status status="PASS" starttime="20230624 10:11:09.755" endtime="20230624 10:11:09.823"/>
+<msg timestamp="20230625 18:37:19.877" level="INFO">xpath criteria: //*[@content-desc="To Payment button"]</msg>
+<status status="PASS" starttime="20230625 18:37:19.801" endtime="20230625 18:37:19.877"/>
 </kw>
-<status status="PASS" starttime="20230624 10:11:08.356" endtime="20230624 10:11:09.823"/>
+<status status="PASS" starttime="20230625 18:37:18.326" endtime="20230625 18:37:19.877"/>
 </kw>
 <kw name="When user input address data for checkout" library="CheckoutPage">
 <kw name="user input name for checkout" library="CheckoutPage">
 <kw name="Wait Until Element Is Visible" library="AppiumLibrary">
 <arg>${inputNameOnCheckoutPage}</arg>
 <doc>Waits until element specified with `locator` is visible.</doc>
-<msg timestamp="20230624 10:11:09.895" level="INFO">xpath criteria: //*[@content-desc="Full Name* input field"]</msg>
-<status status="PASS" starttime="20230624 10:11:09.824" endtime="20230624 10:11:09.895"/>
+<msg timestamp="20230625 18:37:19.954" level="INFO">xpath criteria: //*[@content-desc="Full Name* input field"]</msg>
+<status status="PASS" starttime="20230625 18:37:19.878" endtime="20230625 18:37:19.954"/>
 </kw>
 <kw name="Input Text" library="AppiumLibrary">
 <arg>${inputNameOnCheckoutPage}</arg>
 <arg>anggadirja</arg>
 <doc>Types the given `text` into text field identified by `locator`.</doc>
-<msg timestamp="20230624 10:11:09.898" level="INFO">Typing text 'anggadirja' into text field 'xpath=//*[@content-desc="Full Name* input field"]'</msg>
-<msg timestamp="20230624 10:11:10.482" level="INFO">xpath criteria: //*[@content-desc="Full Name* input field"]</msg>
-<status status="PASS" starttime="20230624 10:11:09.895" endtime="20230624 10:11:10.482"/>
+<msg timestamp="20230625 18:37:19.957" level="INFO">Typing text 'anggadirja' into text field 'xpath=//*[@content-desc="Full Name* input field"]'</msg>
+<msg timestamp="20230625 18:37:20.653" level="INFO">xpath criteria: //*[@content-desc="Full Name* input field"]</msg>
+<status status="PASS" starttime="20230625 18:37:19.955" endtime="20230625 18:37:20.653"/>
 </kw>
-<status status="PASS" starttime="20230624 10:11:09.824" endtime="20230624 10:11:10.482"/>
+<status status="PASS" starttime="20230625 18:37:19.878" endtime="20230625 18:37:20.653"/>
 </kw>
 <kw name="user input address line 1 for checkout" library="CheckoutPage">
 <kw name="Wait Until Element Is Visible" library="AppiumLibrary">
 <arg>${inputAddressLine1}</arg>
 <doc>Waits until element specified with `locator` is visible.</doc>
-<msg timestamp="20230624 10:11:10.993" level="INFO">xpath criteria: //*[@content-desc="Address Line 1* input field"]</msg>
-<status status="PASS" starttime="20230624 10:11:10.482" endtime="20230624 10:11:10.993"/>
+<msg timestamp="20230625 18:37:21.216" level="INFO">xpath criteria: //*[@content-desc="Address Line 1* input field"]</msg>
+<status status="PASS" starttime="20230625 18:37:20.654" endtime="20230625 18:37:21.216"/>
 </kw>
 <kw name="Input Text" library="AppiumLibrary">
 <arg>${inputAddressLine1}</arg>
 <arg>JL Ciliwung</arg>
 <doc>Types the given `text` into text field identified by `locator`.</doc>
-<msg timestamp="20230624 10:11:10.999" level="INFO">Typing text 'JL Ciliwung' into text field 'xpath=//*[@content-desc="Address Line 1* input field"]'</msg>
-<msg timestamp="20230624 10:11:11.088" level="INFO">xpath criteria: //*[@content-desc="Address Line 1* input field"]</msg>
-<status status="PASS" starttime="20230624 10:11:10.994" endtime="20230624 10:11:11.088"/>
+<msg timestamp="20230625 18:37:21.218" level="INFO">Typing text 'JL Ciliwung' into text field 'xpath=//*[@content-desc="Address Line 1* input field"]'</msg>
+<msg timestamp="20230625 18:37:21.805" level="INFO">xpath criteria: //*[@content-desc="Address Line 1* input field"]</msg>
+<status status="PASS" starttime="20230625 18:37:21.216" endtime="20230625 18:37:21.805"/>
 </kw>
-<status status="PASS" starttime="20230624 10:11:10.482" endtime="20230624 10:11:11.088"/>
+<status status="PASS" starttime="20230625 18:37:20.654" endtime="20230625 18:37:21.805"/>
 </kw>
 <kw name="user input address line 2 for checkout" library="CheckoutPage">
 <kw name="Wait Until Element Is Visible" library="AppiumLibrary">
 <arg>${inputAddressLine2}</arg>
 <doc>Waits until element specified with `locator` is visible.</doc>
-<msg timestamp="20230624 10:11:11.723" level="INFO">xpath criteria: //*[@content-desc="Address Line 2 input field"]</msg>
-<status status="PASS" starttime="20230624 10:11:11.088" endtime="20230624 10:11:11.723"/>
+<msg timestamp="20230625 18:37:22.370" level="INFO">xpath criteria: //*[@content-desc="Address Line 2 input field"]</msg>
+<status status="PASS" starttime="20230625 18:37:21.806" endtime="20230625 18:37:22.370"/>
 </kw>
 <kw name="Input Text" library="AppiumLibrary">
 <arg>${inputAddressLine2}</arg>
 <arg>rumah angga</arg>
 <doc>Types the given `text` into text field identified by `locator`.</doc>
-<msg timestamp="20230624 10:11:11.726" level="INFO">Typing text 'rumah angga' into text field 'xpath=//*[@content-desc="Address Line 2 input field"]'</msg>
-<msg timestamp="20230624 10:11:12.298" level="INFO">xpath criteria: //*[@content-desc="Address Line 2 input field"]</msg>
-<status status="PASS" starttime="20230624 10:11:11.723" endtime="20230624 10:11:12.298"/>
+<msg timestamp="20230625 18:37:22.373" level="INFO">Typing text 'rumah angga' into text field 'xpath=//*[@content-desc="Address Line 2 input field"]'</msg>
+<msg timestamp="20230625 18:37:22.453" level="INFO">xpath criteria: //*[@content-desc="Address Line 2 input field"]</msg>
+<status status="PASS" starttime="20230625 18:37:22.371" endtime="20230625 18:37:22.453"/>
 </kw>
-<status status="PASS" starttime="20230624 10:11:11.088" endtime="20230624 10:11:12.298"/>
+<status status="PASS" starttime="20230625 18:37:21.805" endtime="20230625 18:37:22.454"/>
 </kw>
 <kw name="user input city for checkout" library="CheckoutPage">
 <kw name="Wait Until Element Is Visible" library="AppiumLibrary">
 <arg>${inputCity}</arg>
 <doc>Waits until element specified with `locator` is visible.</doc>
-<msg timestamp="20230624 10:11:12.870" level="INFO">xpath criteria: //*[@content-desc="City* input field"]</msg>
-<status status="PASS" starttime="20230624 10:11:12.299" endtime="20230624 10:11:12.870"/>
+<msg timestamp="20230625 18:37:23.020" level="INFO">xpath criteria: //*[@content-desc="City* input field"]</msg>
+<status status="PASS" starttime="20230625 18:37:22.454" endtime="20230625 18:37:23.021"/>
 </kw>
 <kw name="Input Text" library="AppiumLibrary">
 <arg>${inputCity}</arg>
 <arg>Jakarta</arg>
 <doc>Types the given `text` into text field identified by `locator`.</doc>
-<msg timestamp="20230624 10:11:12.873" level="INFO">Typing text 'Jakarta' into text field 'xpath=//*[@content-desc="City* input field"]'</msg>
-<msg timestamp="20230624 10:11:13.476" level="INFO">xpath criteria: //*[@content-desc="City* input field"]</msg>
-<status status="PASS" starttime="20230624 10:11:12.870" endtime="20230624 10:11:13.476"/>
+<msg timestamp="20230625 18:37:23.023" level="INFO">Typing text 'Jakarta' into text field 'xpath=//*[@content-desc="City* input field"]'</msg>
+<msg timestamp="20230625 18:37:23.601" level="INFO">xpath criteria: //*[@content-desc="City* input field"]</msg>
+<status status="PASS" starttime="20230625 18:37:23.021" endtime="20230625 18:37:23.601"/>
 </kw>
-<status status="PASS" starttime="20230624 10:11:12.299" endtime="20230624 10:11:13.477"/>
+<status status="PASS" starttime="20230625 18:37:22.454" endtime="20230625 18:37:23.601"/>
 </kw>
 <kw name="user input zip code for checkout" library="CheckoutPage">
 <kw name="Wait Until Element Is Visible" library="AppiumLibrary">
 <arg>${inputZipCode}</arg>
 <doc>Waits until element specified with `locator` is visible.</doc>
-<msg timestamp="20230624 10:11:14.026" level="INFO">xpath criteria: //*[@content-desc="Zip Code* input field"]</msg>
-<status status="PASS" starttime="20230624 10:11:13.477" endtime="20230624 10:11:14.026"/>
+<msg timestamp="20230625 18:37:24.176" level="INFO">xpath criteria: //*[@content-desc="Zip Code* input field"]</msg>
+<status status="PASS" starttime="20230625 18:37:23.602" endtime="20230625 18:37:24.176"/>
 </kw>
 <kw name="Input Text" library="AppiumLibrary">
 <arg>${inputZipCode}</arg>
 <arg>13640</arg>
 <doc>Types the given `text` into text field identified by `locator`.</doc>
-<msg timestamp="20230624 10:11:14.029" level="INFO">Typing text '13640' into text field 'xpath=//*[@content-desc="Zip Code* input field"]'</msg>
-<msg timestamp="20230624 10:11:14.601" level="INFO">xpath criteria: //*[@content-desc="Zip Code* input field"]</msg>
-<status status="PASS" starttime="20230624 10:11:14.026" endtime="20230624 10:11:14.601"/>
+<msg timestamp="20230625 18:37:24.178" level="INFO">Typing text '13640' into text field 'xpath=//*[@content-desc="Zip Code* input field"]'</msg>
+<msg timestamp="20230625 18:37:24.756" level="INFO">xpath criteria: //*[@content-desc="Zip Code* input field"]</msg>
+<status status="PASS" starttime="20230625 18:37:24.176" endtime="20230625 18:37:24.756"/>
 </kw>
-<status status="PASS" starttime="20230624 10:11:13.477" endtime="20230624 10:11:14.601"/>
+<status status="PASS" starttime="20230625 18:37:23.602" endtime="20230625 18:37:24.756"/>
 </kw>
 <kw name="user input country for checkout" library="CheckoutPage">
 <kw name="Wait Until Element Is Visible" library="AppiumLibrary">
 <arg>${inputCountry}</arg>
 <doc>Waits until element specified with `locator` is visible.</doc>
-<msg timestamp="20230624 10:11:15.159" level="INFO">xpath criteria: //*[@content-desc="Country* input field"]</msg>
-<status status="PASS" starttime="20230624 10:11:14.602" endtime="20230624 10:11:15.159"/>
+<msg timestamp="20230625 18:37:25.264" level="INFO">xpath criteria: //*[@content-desc="Country* input field"]</msg>
+<status status="PASS" starttime="20230625 18:37:24.757" endtime="20230625 18:37:25.264"/>
 </kw>
 <kw name="Input Text" library="AppiumLibrary">
 <arg>${inputCountry}</arg>
 <arg>Indonesia</arg>
 <doc>Types the given `text` into text field identified by `locator`.</doc>
-<msg timestamp="20230624 10:11:15.162" level="INFO">Typing text 'Indonesia' into text field 'xpath=//*[@content-desc="Country* input field"]'</msg>
-<msg timestamp="20230624 10:11:15.758" level="INFO">xpath criteria: //*[@content-desc="Country* input field"]</msg>
-<status status="PASS" starttime="20230624 10:11:15.159" endtime="20230624 10:11:15.758"/>
+<msg timestamp="20230625 18:37:25.267" level="INFO">Typing text 'Indonesia' into text field 'xpath=//*[@content-desc="Country* input field"]'</msg>
+<msg timestamp="20230625 18:37:25.855" level="INFO">xpath criteria: //*[@content-desc="Country* input field"]</msg>
+<status status="PASS" starttime="20230625 18:37:25.264" endtime="20230625 18:37:25.855"/>
 </kw>
-<status status="PASS" starttime="20230624 10:11:14.601" endtime="20230624 10:11:15.759"/>
+<status status="PASS" starttime="20230625 18:37:24.757" endtime="20230625 18:37:25.855"/>
 </kw>
-<status status="PASS" starttime="20230624 10:11:09.823" endtime="20230624 10:11:15.759"/>
+<status status="PASS" starttime="20230625 18:37:19.877" endtime="20230625 18:37:25.855"/>
 </kw>
 <kw name="And user click go to payment page" library="CheckoutPage">
 <kw name="Wait Until Element Is Visible" library="AppiumLibrary">
 <arg>${buttonGoToPayment}</arg>
 <doc>Waits until element specified with `locator` is visible.</doc>
-<msg timestamp="20230624 10:11:16.421" level="INFO">xpath criteria: //*[@content-desc="To Payment button"]</msg>
-<status status="PASS" starttime="20230624 10:11:15.760" endtime="20230624 10:11:16.421"/>
+<msg timestamp="20230625 18:37:26.427" level="INFO">xpath criteria: //*[@content-desc="To Payment button"]</msg>
+<status status="PASS" starttime="20230625 18:37:25.858" endtime="20230625 18:37:26.427"/>
 </kw>
 <kw name="Click Element" library="AppiumLibrary">
 <arg>${buttonGoToPayment}</arg>
 <doc>Click element identified by `locator`.</doc>
-<msg timestamp="20230624 10:11:16.424" level="INFO">Clicking element 'xpath=//*[@content-desc="To Payment button"]'.</msg>
-<msg timestamp="20230624 10:11:16.675" level="INFO">xpath criteria: //*[@content-desc="To Payment button"]</msg>
-<status status="PASS" starttime="20230624 10:11:16.421" endtime="20230624 10:11:16.675"/>
+<msg timestamp="20230625 18:37:26.430" level="INFO">Clicking element 'xpath=//*[@content-desc="To Payment button"]'.</msg>
+<msg timestamp="20230625 18:37:26.502" level="INFO">xpath criteria: //*[@content-desc="To Payment button"]</msg>
+<status status="PASS" starttime="20230625 18:37:26.427" endtime="20230625 18:37:26.502"/>
 </kw>
-<status status="PASS" starttime="20230624 10:11:15.759" endtime="20230624 10:11:16.675"/>
+<status status="PASS" starttime="20230625 18:37:25.856" endtime="20230625 18:37:26.502"/>
 </kw>
 <kw name="Then user is on payment page" library="PaymentPage">
 <kw name="Wait Until Element Is Visible" library="AppiumLibrary">
 <arg>${inputNameOnPaymentPage}</arg>
 <doc>Waits until element specified with `locator` is visible.</doc>
-<msg timestamp="20230624 10:11:17.161" level="INFO">xpath criteria: (//*[contains(@content-desc,"Full Name")])[1]</msg>
-<status status="PASS" starttime="20230624 10:11:16.676" endtime="20230624 10:11:17.161"/>
+<msg timestamp="20230625 18:37:26.650" level="INFO">xpath criteria: (//*[contains(@content-desc,"Full Name")])[1]</msg>
+<status status="PASS" starttime="20230625 18:37:26.502" endtime="20230625 18:37:26.650"/>
 </kw>
-<status status="PASS" starttime="20230624 10:11:16.676" endtime="20230624 10:11:17.162"/>
+<status status="PASS" starttime="20230625 18:37:26.502" endtime="20230625 18:37:26.650"/>
 </kw>
 <kw name="When user input payment credentials" library="PaymentPage">
 <kw name="user get payment credentials" library="PaymentPage">
@@ -910,165 +911,165 @@ xpath criteria: //*[@content-desc="Full Name* input field"]</msg>
 <arg>${NameCC}</arg>
 <arg>Rebecca Winter</arg>
 <doc>Makes a variable available globally in all tests and suites.</doc>
-<msg timestamp="20230624 10:11:17.165" level="INFO">${NameCC} = Rebecca Winter</msg>
-<status status="PASS" starttime="20230624 10:11:17.163" endtime="20230624 10:11:17.165"/>
+<msg timestamp="20230625 18:37:26.652" level="INFO">${NameCC} = Rebecca Winter</msg>
+<status status="PASS" starttime="20230625 18:37:26.651" endtime="20230625 18:37:26.652"/>
 </kw>
 <kw name="Set Global Variable" library="BuiltIn">
 <arg>${NoCC}</arg>
 <arg>325812657568789</arg>
 <doc>Makes a variable available globally in all tests and suites.</doc>
-<msg timestamp="20230624 10:11:17.167" level="INFO">${NoCC} = 325812657568789</msg>
-<status status="PASS" starttime="20230624 10:11:17.165" endtime="20230624 10:11:17.167"/>
+<msg timestamp="20230625 18:37:26.654" level="INFO">${NoCC} = 325812657568789</msg>
+<status status="PASS" starttime="20230625 18:37:26.652" endtime="20230625 18:37:26.654"/>
 </kw>
 <kw name="Set Global Variable" library="BuiltIn">
 <arg>${ExpCC}</arg>
 <arg>0325</arg>
 <doc>Makes a variable available globally in all tests and suites.</doc>
-<msg timestamp="20230624 10:11:17.170" level="INFO">${ExpCC} = 0325</msg>
-<status status="PASS" starttime="20230624 10:11:17.167" endtime="20230624 10:11:17.170"/>
+<msg timestamp="20230625 18:37:26.656" level="INFO">${ExpCC} = 0325</msg>
+<status status="PASS" starttime="20230625 18:37:26.654" endtime="20230625 18:37:26.656"/>
 </kw>
 <kw name="Set Global Variable" library="BuiltIn">
 <arg>${CodeCC}</arg>
 <arg>123</arg>
 <doc>Makes a variable available globally in all tests and suites.</doc>
-<msg timestamp="20230624 10:11:17.173" level="INFO">${CodeCC} = 123</msg>
-<status status="PASS" starttime="20230624 10:11:17.170" endtime="20230624 10:11:17.173"/>
+<msg timestamp="20230625 18:37:26.657" level="INFO">${CodeCC} = 123</msg>
+<status status="PASS" starttime="20230625 18:37:26.656" endtime="20230625 18:37:26.657"/>
 </kw>
-<status status="PASS" starttime="20230624 10:11:17.163" endtime="20230624 10:11:17.173"/>
-</kw>
-<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
-<arg>${inputNameOnPaymentPage}</arg>
-<doc>Waits until element specified with `locator` is visible.</doc>
-<msg timestamp="20230624 10:11:17.472" level="INFO">xpath criteria: (//*[contains(@content-desc,"Full Name")])[1]</msg>
-<status status="PASS" starttime="20230624 10:11:17.173" endtime="20230624 10:11:17.473"/>
+<status status="PASS" starttime="20230625 18:37:26.651" endtime="20230625 18:37:26.657"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>5</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20230624 10:11:22.475" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" starttime="20230624 10:11:17.473" endtime="20230624 10:11:22.475"/>
+<msg timestamp="20230625 18:37:31.659" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20230625 18:37:26.658" endtime="20230625 18:37:31.660"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>${inputNameOnPaymentPage}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<msg timestamp="20230625 18:37:31.734" level="INFO">xpath criteria: (//*[contains(@content-desc,"Full Name")])[1]</msg>
+<status status="PASS" starttime="20230625 18:37:31.660" endtime="20230625 18:37:31.734"/>
 </kw>
 <kw name="Input Text" library="AppiumLibrary">
 <arg>${inputNameOnPaymentPage}</arg>
 <arg>${NameCC}</arg>
 <doc>Types the given `text` into text field identified by `locator`.</doc>
-<msg timestamp="20230624 10:11:22.484" level="INFO">Typing text 'Rebecca Winter' into text field 'xpath=(//*[contains(@content-desc,"Full Name")])[1]'</msg>
-<msg timestamp="20230624 10:11:23.076" level="INFO">xpath criteria: (//*[contains(@content-desc,"Full Name")])[1]</msg>
-<status status="PASS" starttime="20230624 10:11:22.476" endtime="20230624 10:11:23.076"/>
+<msg timestamp="20230625 18:37:31.737" level="INFO">Typing text 'Rebecca Winter' into text field 'xpath=(//*[contains(@content-desc,"Full Name")])[1]'</msg>
+<msg timestamp="20230625 18:37:32.317" level="INFO">xpath criteria: (//*[contains(@content-desc,"Full Name")])[1]</msg>
+<status status="PASS" starttime="20230625 18:37:31.735" endtime="20230625 18:37:32.317"/>
 </kw>
 <kw name="Input Text" library="AppiumLibrary">
 <arg>${inputCardNumber}</arg>
 <arg>${NoCC}</arg>
 <doc>Types the given `text` into text field identified by `locator`.</doc>
-<msg timestamp="20230624 10:11:23.081" level="INFO">Typing text '325812657568789' into text field 'xpath=(//*[contains(@content-desc,"Card Number")])[1]'</msg>
-<msg timestamp="20230624 10:11:24.173" level="INFO">xpath criteria: (//*[contains(@content-desc,"Card Number")])[1]</msg>
-<status status="PASS" starttime="20230624 10:11:23.076" endtime="20230624 10:11:24.174"/>
+<msg timestamp="20230625 18:37:32.320" level="INFO">Typing text '325812657568789' into text field 'xpath=(//*[contains(@content-desc,"Card Number")])[1]'</msg>
+<msg timestamp="20230625 18:37:33.398" level="INFO">xpath criteria: (//*[contains(@content-desc,"Card Number")])[1]</msg>
+<status status="PASS" starttime="20230625 18:37:32.317" endtime="20230625 18:37:33.398"/>
 </kw>
 <kw name="Input Text" library="AppiumLibrary">
 <arg>${inputExpiredDateOnPaymentPage}</arg>
 <arg>${ExpCC}</arg>
 <doc>Types the given `text` into text field identified by `locator`.</doc>
-<msg timestamp="20230624 10:11:24.181" level="INFO">Typing text '0325' into text field 'xpath=(//*[contains(@content-desc,"Expiration Date")])[1]'</msg>
-<msg timestamp="20230624 10:11:25.300" level="INFO">xpath criteria: (//*[contains(@content-desc,"Expiration Date")])[1]</msg>
-<status status="PASS" starttime="20230624 10:11:24.174" endtime="20230624 10:11:25.300"/>
+<msg timestamp="20230625 18:37:33.407" level="INFO">Typing text '0325' into text field 'xpath=(//*[contains(@content-desc,"Expiration Date")])[1]'</msg>
+<msg timestamp="20230625 18:37:34.533" level="INFO">xpath criteria: (//*[contains(@content-desc,"Expiration Date")])[1]</msg>
+<status status="PASS" starttime="20230625 18:37:33.399" endtime="20230625 18:37:34.533"/>
 </kw>
 <kw name="Input Text" library="AppiumLibrary">
 <arg>${inputSecurityCode}</arg>
 <arg>${CodeCC}</arg>
 <doc>Types the given `text` into text field identified by `locator`.</doc>
-<msg timestamp="20230624 10:11:25.305" level="INFO">Typing text '123' into text field 'xpath=(//*[contains(@content-desc,"Security Code")])[1]'</msg>
-<msg timestamp="20230624 10:11:26.408" level="INFO">xpath criteria: (//*[contains(@content-desc,"Security Code")])[1]</msg>
-<status status="PASS" starttime="20230624 10:11:25.300" endtime="20230624 10:11:26.409"/>
+<msg timestamp="20230625 18:37:34.538" level="INFO">Typing text '123' into text field 'xpath=(//*[contains(@content-desc,"Security Code")])[1]'</msg>
+<msg timestamp="20230625 18:37:35.677" level="INFO">xpath criteria: (//*[contains(@content-desc,"Security Code")])[1]</msg>
+<status status="PASS" starttime="20230625 18:37:34.534" endtime="20230625 18:37:35.677"/>
 </kw>
-<status status="PASS" starttime="20230624 10:11:17.162" endtime="20230624 10:11:26.409"/>
+<status status="PASS" starttime="20230625 18:37:26.650" endtime="20230625 18:37:35.677"/>
 </kw>
 <kw name="And user click button review order" library="PaymentPage">
 <kw name="Wait Until Element Is Visible" library="AppiumLibrary">
 <arg>${buttonReviewOrder}</arg>
 <doc>Waits until element specified with `locator` is visible.</doc>
-<msg timestamp="20230624 10:11:26.920" level="INFO">xpath criteria: //*[@content-desc="Review Order button"]</msg>
-<status status="PASS" starttime="20230624 10:11:26.410" endtime="20230624 10:11:26.920"/>
+<msg timestamp="20230625 18:37:36.239" level="INFO">xpath criteria: //*[@content-desc="Review Order button"]</msg>
+<status status="PASS" starttime="20230625 18:37:35.678" endtime="20230625 18:37:36.239"/>
 </kw>
 <kw name="Click Element" library="AppiumLibrary">
 <arg>${buttonReviewOrder}</arg>
 <doc>Click element identified by `locator`.</doc>
-<msg timestamp="20230624 10:11:26.925" level="INFO">Clicking element 'xpath=//*[@content-desc="Review Order button"]'.</msg>
-<msg timestamp="20230624 10:11:27.009" level="INFO">xpath criteria: //*[@content-desc="Review Order button"]</msg>
-<status status="PASS" starttime="20230624 10:11:26.920" endtime="20230624 10:11:27.009"/>
+<msg timestamp="20230625 18:37:36.242" level="INFO">Clicking element 'xpath=//*[@content-desc="Review Order button"]'.</msg>
+<msg timestamp="20230625 18:37:36.302" level="INFO">xpath criteria: //*[@content-desc="Review Order button"]</msg>
+<status status="PASS" starttime="20230625 18:37:36.239" endtime="20230625 18:37:36.302"/>
 </kw>
-<status status="PASS" starttime="20230624 10:11:26.409" endtime="20230624 10:11:27.009"/>
+<status status="PASS" starttime="20230625 18:37:35.677" endtime="20230625 18:37:36.302"/>
 </kw>
 <kw name="Then user is on review order page" library="ReviewOrderPage">
 <kw name="Wait Until Element Is Visible" library="AppiumLibrary">
 <arg>${buttonPlaceOrder}</arg>
 <doc>Waits until element specified with `locator` is visible.</doc>
-<msg timestamp="20230624 10:11:28.346" level="INFO">xpath criteria: //*[@content-desc="Place Order button"]
+<msg timestamp="20230625 18:37:37.700" level="INFO">xpath criteria: //*[@content-desc="Place Order button"]
 xpath criteria: //*[@content-desc="Place Order button"]</msg>
-<status status="PASS" starttime="20230624 10:11:27.010" endtime="20230624 10:11:28.346"/>
+<status status="PASS" starttime="20230625 18:37:36.303" endtime="20230625 18:37:37.700"/>
 </kw>
 <kw name="Element Should Be Visible" library="AppiumLibrary">
 <arg>${buttonPlaceOrder}</arg>
 <doc>Verifies that element identified with locator is visible.</doc>
-<msg timestamp="20230624 10:11:28.421" level="INFO">xpath criteria: //*[@content-desc="Place Order button"]</msg>
-<status status="PASS" starttime="20230624 10:11:28.347" endtime="20230624 10:11:28.421"/>
+<msg timestamp="20230625 18:37:37.763" level="INFO">xpath criteria: //*[@content-desc="Place Order button"]</msg>
+<status status="PASS" starttime="20230625 18:37:37.700" endtime="20230625 18:37:37.763"/>
 </kw>
-<status status="PASS" starttime="20230624 10:11:27.009" endtime="20230624 10:11:28.421"/>
+<status status="PASS" starttime="20230625 18:37:36.303" endtime="20230625 18:37:37.763"/>
 </kw>
 <kw name="When user click place order" library="ReviewOrderPage">
 <kw name="Wait Until Element Is Visible" library="AppiumLibrary">
 <arg>${buttonPlaceOrder}</arg>
 <doc>Waits until element specified with `locator` is visible.</doc>
-<msg timestamp="20230624 10:11:28.490" level="INFO">xpath criteria: //*[@content-desc="Place Order button"]</msg>
-<status status="PASS" starttime="20230624 10:11:28.422" endtime="20230624 10:11:28.490"/>
+<msg timestamp="20230625 18:37:37.828" level="INFO">xpath criteria: //*[@content-desc="Place Order button"]</msg>
+<status status="PASS" starttime="20230625 18:37:37.764" endtime="20230625 18:37:37.828"/>
 </kw>
 <kw name="Click Element" library="AppiumLibrary">
 <arg>${buttonPlaceOrder}</arg>
 <doc>Click element identified by `locator`.</doc>
-<msg timestamp="20230624 10:11:28.493" level="INFO">Clicking element 'xpath=//*[@content-desc="Place Order button"]'.</msg>
-<msg timestamp="20230624 10:11:28.572" level="INFO">xpath criteria: //*[@content-desc="Place Order button"]</msg>
-<status status="PASS" starttime="20230624 10:11:28.491" endtime="20230624 10:11:28.572"/>
+<msg timestamp="20230625 18:37:37.831" level="INFO">Clicking element 'xpath=//*[@content-desc="Place Order button"]'.</msg>
+<msg timestamp="20230625 18:37:37.932" level="INFO">xpath criteria: //*[@content-desc="Place Order button"]</msg>
+<status status="PASS" starttime="20230625 18:37:37.828" endtime="20230625 18:37:37.932"/>
 </kw>
-<status status="PASS" starttime="20230624 10:11:28.421" endtime="20230624 10:11:28.572"/>
+<status status="PASS" starttime="20230625 18:37:37.763" endtime="20230625 18:37:37.933"/>
 </kw>
 <kw name="Then user is on checkout complete page" library="CheckoutCompletePage">
 <kw name="Wait Until Element Is Visible" library="AppiumLibrary">
 <arg>${buttonContinueShopping}</arg>
 <doc>Waits until element specified with `locator` is visible.</doc>
-<msg timestamp="20230624 10:11:29.877" level="INFO">xpath criteria: //*[@content-desc="Continue Shopping button"]
+<msg timestamp="20230625 18:37:39.207" level="INFO">xpath criteria: //*[@content-desc="Continue Shopping button"]
 xpath criteria: //*[@content-desc="Continue Shopping button"]</msg>
-<status status="PASS" starttime="20230624 10:11:28.573" endtime="20230624 10:11:29.877"/>
+<status status="PASS" starttime="20230625 18:37:37.934" endtime="20230625 18:37:39.207"/>
 </kw>
 <kw name="Element Should Be Visible" library="AppiumLibrary">
 <arg>${buttonContinueShopping}</arg>
 <doc>Verifies that element identified with locator is visible.</doc>
-<msg timestamp="20230624 10:11:29.924" level="INFO">xpath criteria: //*[@content-desc="Continue Shopping button"]</msg>
-<status status="PASS" starttime="20230624 10:11:29.877" endtime="20230624 10:11:29.924"/>
+<msg timestamp="20230625 18:37:39.249" level="INFO">xpath criteria: //*[@content-desc="Continue Shopping button"]</msg>
+<status status="PASS" starttime="20230625 18:37:39.207" endtime="20230625 18:37:39.249"/>
 </kw>
-<status status="PASS" starttime="20230624 10:11:28.573" endtime="20230624 10:11:29.924"/>
+<status status="PASS" starttime="20230625 18:37:37.933" endtime="20230625 18:37:39.249"/>
 </kw>
-<status status="PASS" starttime="20230624 10:10:54.430" endtime="20230624 10:11:29.924"/>
+<status status="PASS" starttime="20230625 18:37:03.382" endtime="20230625 18:37:39.249"/>
 </kw>
 <doc>this scenario to verify user can create order</doc>
 <tag>order</tag>
 <tag>positive</tag>
 <tag>prod</tag>
-<status status="PASS" starttime="20230624 10:10:54.430" endtime="20230624 10:11:29.925"/>
+<status status="PASS" starttime="20230625 18:37:03.381" endtime="20230625 18:37:39.249"/>
 </test>
 <kw name="After Suite" library="prod" type="TEARDOWN">
 <kw name="Remove Application" library="AppiumLibrary">
 <arg>${APP PACKAGE}</arg>
 <doc>Removes the application that is identified with an application id</doc>
-<status status="PASS" starttime="20230624 10:11:29.926" endtime="20230624 10:11:30.575"/>
+<status status="PASS" starttime="20230625 18:37:39.250" endtime="20230625 18:37:40.873"/>
 </kw>
 <kw name="Close Application" library="AppiumLibrary">
 <doc>Closes the current application and also close webdriver session.</doc>
-<status status="PASS" starttime="20230624 10:11:30.576" endtime="20230624 10:11:31.214"/>
+<status status="PASS" starttime="20230625 18:37:40.873" endtime="20230625 18:37:41.516"/>
 </kw>
-<status status="PASS" starttime="20230624 10:11:29.925" endtime="20230624 10:11:31.214"/>
+<status status="PASS" starttime="20230625 18:37:39.250" endtime="20230625 18:37:41.516"/>
 </kw>
-<status status="PASS" starttime="20230624 10:10:40.352" endtime="20230624 10:11:31.214"/>
+<status status="PASS" starttime="20230625 18:36:53.310" endtime="20230625 18:37:41.516"/>
 </suite>
-<status status="PASS" starttime="20230624 10:10:07.050" endtime="20230624 10:11:31.216"/>
+<status status="PASS" starttime="20230625 18:36:20.635" endtime="20230625 18:37:41.518"/>
 </suite>
 <statistics>
 <total>

@@ -5,7 +5,6 @@ Library           String
 Library           BuiltIn
 Library           DateTime
 Library           Collections
-# Library           CustomLibrary
 
 *** Variable ***
 ${APKPATH}                  /Users/mbp2020/Documents/APK/Android-MyDemoAppRN.1.3.0.build-244.apk

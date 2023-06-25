@@ -24,7 +24,6 @@ user get payment credentials
 user input payment credentials
     user get payment credentials
     Wait Until Element Is Visible                        ${inputNameOnPaymentPage}
-    Sleep    5
     Input Text    ${inputNameOnPaymentPage}              ${NameCC}
     Input Text    ${inputCardNumber}                     ${NoCC}
     Input Text    ${inputExpiredDateOnPaymentPage}       ${ExpCC}
